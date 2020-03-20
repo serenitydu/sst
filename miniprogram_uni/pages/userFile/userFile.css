@@ -1,0 +1,77 @@
+/* pages/userFile/userFile.wxss */
+.avtSpace{
+	height: 600rpx;
+	width: 100%;
+	display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content: center;
+}
+.avtImg{
+	height: 400rpx;
+	width:400rpx;
+	 border-radius:50%;
+}
+.nameSpace{
+	height: 300rpx;
+	width: 100%;
+	display: flex;
+	align-items:center;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 200%;
+}
+.blankSpace{
+	height: 400rpx;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: flex-start;
+	font-size: 110%;
+}
+.bkg{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: #faf8e1;
+    flex-direction: column;
+    justify-content: center;
+}
+.changeNameBlock{
+	width: 90vw;
+	height: 20vh;
+	background: #dbfdff;
+	position: absolute;
+	opacity: 0.9;
+	left:5vw;
+	top: 40vh;
+	display: flex;
+	align-items:center;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 15px;
+}
+.inputBlock{
+	font-size: 150%;
+	height: 50%;
+}
+.confirmBtBlock{
+	display: flex;
+	align-items:center;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+}
+.confirmBt{
+	background: #7f898a;
+	font-weight: 1000;
+	font-size: 140%;
+	display: flex;
+	align-items:center;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 15px;
+	height: 20%;
+	width: 30%;
+}

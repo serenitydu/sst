@@ -1,0 +1,216 @@
+{
+	"pages": [
+		{
+			"path": "pages/commu/commu",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationStyle":"custom",
+				"app-plus": {
+					"titleNView": false  
+				}
+			}
+		},
+		{
+			"path": "pages/groupChat/groupChat",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/groupChat/groupChatList",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/userInfo/userInfo",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationStyle":"custom",
+				"app-plus": {
+					"titleNView": false  
+				}
+			}
+		},
+		{
+			"path":"pages/GroupActs/GroupActList",
+			"style":{}
+		},
+		{
+			"path": "pages/showCP/showCP",
+			"style": {}
+		},
+		{
+			"path": "pages/mercPage/mercIndex/mercIndex",
+			"style": {}
+		},
+		{
+			"path": "pages/testPage/test2",
+			"style": {}
+		},
+		{
+			"path": "pages/mercPage/manageItem/manageItem",
+			"style": {}
+		},
+		{
+			"path": "pages/mercPage/addItem/addItem",
+			"style": {}
+		},
+		{
+			"path": "pages/mercPage/manageStore/manageStore",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/Pintuan/Pintuan",
+			"style": {}
+		},
+		{
+			"path": "pages/pubReq/pubReq",
+			"style": {}
+		},
+		{
+			"path": "pages/newAt/newAt",
+			"style": {}
+		},
+		{
+			"path": "pages/pays/htvarify",
+			"style": {}
+		},
+		{
+			"path": "pages/inBox/inBox",
+			"style": {}
+		},
+		{
+			"path": "pages/pays/pay",
+			"style": {}
+		},
+		{
+			"path": "pages/pubPost/pubPost",
+			"style": {}
+		},
+		{
+			"path": "pages/navi/navi",
+			"style": {}
+		},
+		{
+			"path": "pages/Store/Store",
+			"style": {}
+		},
+		{
+			"path": "pages/item/item",
+			"style": {}
+		},
+		{
+			"path": "component/popup/popup",
+			"style": {
+				"component": true
+			}
+		},
+		{
+			"path": "pages/testPage/testThird",
+			"style": {}
+		},
+		{
+			"path": "component/payjs/payjs",
+			"style": {
+				"component": true
+			}
+		},
+		{
+			"path": "pages/tuan/tuan",
+			"style": {}
+		},
+		{
+			"path": "pages/xiaonei/xiaonei",
+			"style": {}
+		},
+		{
+			"path": "pages/postmanage/postmanage",
+			"style": {
+				"component": true
+			}
+		},
+		{
+			"path": "pages/ershou/ershou",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationStyle":"custom",
+				"app-plus": {  
+					"titleNView": false  
+				}
+			}
+		}
+	    ,{
+            "path" : "pages/login/login",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/register/register",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/userFile/userFile",
+            "style" : {}
+        }
+    ],
+	"navigateToMiniProgramAppIdList": [
+		"wx959c8c1fb2d877b5"
+	],
+	"tabBar": {
+		"color": "#403e3a",
+		"selectedColor": "#000000",
+		"borderStyle": "white",
+		"backgroundColor": "#FFD557",
+		"list": [
+			{
+				"text": "社区",
+				"pagePath": "pages/commu/commu",
+				"iconPath": "./static/icons/community.png",
+				"selectedIconPath": "./static/icons/community-active.png"
+			},
+			{
+				"text": "活动",
+				"pagePath": "pages/commu/commu",
+				"iconPath": "./static/icons/home-white.png",
+				"selectedIconPath": "./static/icons/home-white-active.png"
+			},
+			{
+				"text": "聊天",
+				"pagePath": "pages/groupChat/groupChatList",
+				"iconPath": "./static/icons/community.png",
+				"selectedIconPath": "./static/icons/community-active.png"
+			},
+			{
+				"text": "交易",
+				"pagePath": "pages/ershou/ershou",
+				"iconPath": "./static/icons/web.png",
+				"selectedIconPath": "./static/icons/web-active.png"
+			},
+			
+			{
+				"text": "个人",
+				"pagePath": "pages/userInfo/userInfo",
+				"iconPath": "./static/icons/user.png",
+				"selectedIconPath": "./static/icons/user-active.png"
+			}
+		]
+	},
+	"globalStyle": {
+	  "backgroundColor": "#FFD557",
+	  "navigationBarBackgroundColor": "#FFD557",
+	  "navigationBarTextStyle": "black"
+	 },
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	},
+	"subPackages": []
+}

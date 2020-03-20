@@ -1,0 +1,24 @@
+.container{
+	width: 100vw;
+	height: 100vh;
+	background: rgb(228, 228, 228);
+}
+.gcBlock{
+	width:100vw;
+	height: 200rpx;
+	background: #ffffff;
+	border-top: 2rpx solid rgb(228, 228, 228);
+}
+.groupImg{
+  border-radius: 10rpx;
+  position: relative;
+  top:30rpx;
+  height: 80rpx;
+  width: 80rpx;
+}
+.titleText{
+	font-family: PingFangTC-Semibold;
+	padding: 20rpx 50rpx;
+	font-weight: bold;
+}
+

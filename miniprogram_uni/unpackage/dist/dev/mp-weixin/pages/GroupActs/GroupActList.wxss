@@ -1,0 +1,61 @@
+.container{
+	height: 100vh;
+	width: 100vw;
+}
+.gcBlock{
+	height: 760rpx;
+	width: 100vw;
+	background: goldenrod;
+}
+.nameBlock{
+	height:160rpx;
+	width: 100vw;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	
+	background: darkgoldenrod;
+}
+.avtBlock{
+	width:160rpx;
+}
+.infoBlock{
+}
+.avt{
+	position: relative;
+	top:20rpx;
+	left:20rpx;
+	height: 120rpx;
+	width: 120rpx;
+	border-radius: 100px;
+}
+.authorName{
+	height: 100rpx;
+	width:100%;
+	font-size: 150%;
+	font-weight: 700;
+}
+.dateStr{
+	height: 60rpx;
+	width:100%;
+}
+.contentBlock{
+	height: 600rpx;
+	width: 100vw;
+}
+.contentImg{
+	position: relative;
+	height: 400rpx;
+	width:96vw;
+	left:2vw;
+	top: 10rpx;
+}
+.descBlock{
+	height:190rpx;
+	width: 100vw;
+}
+

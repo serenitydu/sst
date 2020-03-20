@@ -1,0 +1,1 @@
+<view><view data-event-opts="{{[['tap',[['scanC',['$event']]]]]}}" class="testBut" bindtap="__e">ssss</view><canvas style="width:200px;height:200px;" canvas-id="myQrcode"></canvas></view>

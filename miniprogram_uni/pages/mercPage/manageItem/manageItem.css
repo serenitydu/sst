@@ -1,0 +1,143 @@
+.title{
+  position: absolute;
+  top: 40%;
+  height: 8%;
+  width:100%;
+  font-size: 200%;
+}
+.sectitle{
+  position: absolute;
+  margin-right: 0%; /*这里需要右对齐，能改吗？？？*/
+  top: 48%;
+  height: 8%;
+  width:100%;
+  font-size: 200%;
+}
+.des{
+  border-top:  3rpx groove rgb(211, 211, 211);
+  position: absolute;
+  top: 56%;
+  height: 22%;
+  width:100%;
+  font-size: 120%;
+  background: beige;
+}
+.flavCard{
+  height: 5%;
+  width: 98%;
+  position: absolute;
+  top:78%;
+  left:1%;
+  border-bottom:  3rpx dashed rgb(211, 211, 211);
+  
+}
+
+.flavCardL{
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  top:0%;
+  left:2%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.flavCardR{
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  top:0%;
+  right:-20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section1{
+  height: 4%;
+  width: 48%;
+  position: absolute;
+  top:85%;
+  left:1%;
+  border-bottom:  3rpx dashed rgb(211, 211, 211);
+}
+.kcMark{
+  width: 40%;
+  height: 100%;
+}
+.section2{
+  height: 4%;
+  width: 48%;
+  position: absolute;
+  top:85%;
+  left:51%;
+  border-bottom:  3rpx dashed rgb(211, 211, 211);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.atc{
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  bottom: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.adtocart {
+  width: 90%;
+  margin-right: 5%;
+  margin-bottom: 0%;
+  background-color: #FFCC00;
+  color: #FFF;
+  text-align: center;
+}
+
+.btn_hover {
+  background-color: pink;
+}
+
+.img{
+  position: absolute;
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 100rpx;
+  left: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageWindow{
+  width: 80%;
+  height: 50%;
+  position: absolute;
+  left:10%;
+  top: 25%;
+  background: rgb(252, 238, 110);
+  z-index: 10;
+}
+
+.leftBut{
+  width: 30%;
+  height: 15%;
+  position: absolute;
+  left: 10%;
+  bottom: 5%;
+  background: rgb(143, 248, 143);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightBut{
+  width: 30%;
+  height: 15%;
+  position: absolute;
+  right: 10%;
+  bottom: 5%;
+  background: rgb(143, 248, 143);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

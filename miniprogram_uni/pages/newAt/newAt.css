@@ -1,0 +1,51 @@
+.bkg{
+  width: 100%;
+  height: 100%;
+}
+
+.box{
+  background-size:contain;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height:250rpx;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.comdate{
+  position: absolute;
+  bottom:15rpx;
+  left: 130rpx;
+  text-align: left;
+  font-size: 80%;
+  color: grey;
+}
+
+.authImg{
+  position: absolute;
+  top: 20rpx;
+  left: 20rpx;
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 100%;
+}
+
+/*用户姓名*/
+.userNm{
+  position:absolute;
+  top: 20rpx;
+  left: 130rpx;
+  font-size:90%;
+  text-align: left;
+}
+
+.reply{
+  white-space: break-all;
+  position:absolute;
+  top: 90rpx;
+  left: 130rpx;
+  right:50rpx;
+  font-size:90%;
+  text-align: left;
+}
+

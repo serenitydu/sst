@@ -1,0 +1,7 @@
+{
+  "navigationStyle": "custom",
+  "titleNView": false,
+  "usingComponents": {
+    "popup": "/component/popup/popup"
+  }
+}

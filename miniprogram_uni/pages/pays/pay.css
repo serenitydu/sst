@@ -1,0 +1,316 @@
+.topP{
+  position: absolute;
+  top:0px;
+  left:0px;
+  height: 80%;
+  width: 100%;
+}
+.midP{
+  position: absolute;
+  top:80%;
+  left:0px;
+  height: 10%;
+  width: 100%;
+  background: rgb(235, 235, 235);
+}
+.botP{
+  position: absolute;
+  top:90%;
+  left:0px;
+  height: 10%;
+  width: 100%;
+  background: rgb(255, 255, 255);
+}
+.buyBut1{
+  position: absolute;
+  top: 15%;
+  left:5%;
+  width:43%;
+  height: 70%;
+  border-bottom-left-radius: 30rpx;
+  border-bottom-right-radius: 30rpx;
+  border-top-left-radius: 30rpx;
+  border-top-right-radius: 30rpx;
+  border-bottom: 6rpx groove rgb(211, 211, 211);
+  background: rgb(0, 140, 255);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buyBut2{
+  position: absolute;
+  top: 15%;
+  right:5%;
+  width:43%;
+  height: 70%;
+  border-bottom-left-radius: 30rpx;
+  border-bottom-right-radius: 30rpx;
+  border-top-left-radius: 30rpx;
+  border-top-right-radius: 30rpx;
+  border-bottom: 6rpx groove rgb(211, 211, 211); 
+  background: rgb(0, 255, 34);
+  font-weight: bold;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.address{
+  position: absolute;
+  top:0px;
+  left:0px;
+  height: 8%;
+  width: 85%;
+  font-size: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color:rgb(163, 163, 163);
+    border-bottom: 1rpx solid rgb(129, 129, 129);
+}
+.Editaddress{
+  position: absolute;
+  top:0px;
+  right:0px;
+  height: 8%;
+  width: 15%;
+  font-size: 100%;
+   display: flex;
+  align-items: center;
+  justify-content: right;
+  color: blue;
+  border-bottom: 1rpx solid rgb(129, 129, 129);
+}
+.addressed{
+  position: absolute;
+  top:8%;
+  left:0px;
+  height: 16%;
+  width: 100%;
+  font-size: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  border-bottom: 1rpx solid rgb(129, 129, 129);
+}
+
+.time-picker{
+  position: absolute;
+  top:24%;
+  left:0px;
+  height: 8%;
+  width: 85%;
+  font-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  color:rgb(163, 163, 163);
+  border-bottom: 1rpx solid rgb(129, 129, 129);
+}
+
+.orderTag{
+  position: absolute;
+  top:32%;
+  left:0px;
+  height: 8%;
+  width: 85%;
+  font-size: 100%;
+   display: flex;
+  align-items: center;
+  justify-content: right;
+  color:rgb(163, 163, 163);
+  border-bottom: 1rpx solid rgb(129, 129, 129);
+}
+
+.orderEdit{
+  position: absolute;
+  top:32%;
+  right:0px;
+  height: 8%;
+  width: 15%;
+  font-size: 100%;
+   display: flex;
+  align-items: center;
+  justify-content: right;
+  color: blue;
+  border-bottom: 1rpx solid rgb(129, 129, 129);
+}
+.orders{
+  position: absolute;
+  top:40%;
+  right:0px;
+  height: 68%;
+  width: 100%;
+  font-size: 100%;
+   display: flex;
+  align-items: center;
+  justify-content: right;
+  border-bottom: 1rpx solid rgb(129, 129, 129);
+}
+.itemCard{
+  height: 30%;
+  width: 100%;
+  border-bottom: 1rpx solid rgb(129, 129, 129);
+}
+.count{
+  position: absolute;
+  width: 45%;
+  height: 25%;
+  left: 55%;
+  top:75%;
+  font-size: 110%;
+}
+.minus{
+position: absolute;
+  left:20%;
+  top:65%;
+  height: 30%;
+  width: 10%;
+}
+.plus{
+position: absolute;
+  left:40%;
+  top:65%;
+  height: 30%;
+  width: 10%;
+}
+.leftCard{
+  position: relative;
+  left:0%;
+  top:0%;
+  width: 35%;
+  height: 100%;
+}
+.rightCard{
+  position: relative;
+  left:35%;
+  top:-100%;
+  width: 65%;
+  height: 100%;
+}
+.itemImg{
+  position: absolute;
+  left:5%;
+  top:5%;
+  height: 90%;
+  width: 90%;
+}
+.itemTitle{
+  position: absolute;
+  left: 0%;
+  top:5%;
+  font-size: 150%;
+  width: 80%;
+  height: 38%;
+}
+.itemSize{
+  position: absolute;
+  width: 35%;
+  height: 25%;
+  left: 65%;
+  top:65%;
+  font-size: 110%;
+}
+.itemSub{
+  position: absolute;
+  width: 45%;
+  height: 25%;
+  left: 55%;
+  top:45%;
+  font-size: 100%;
+}
+.totalTag{
+  position: absolute;
+  top:0%;
+  left:0px;
+  height: 100%;
+  width: 85%;
+  font-size: 100%;
+   display: flex;
+  align-items: center;
+  justify-content: right;
+  color:rgb(163, 163, 163);
+  border-bottom: 1rpx solid rgb(129, 129, 129);
+}
+.totalDisp{
+  position: absolute;
+  top:0px;
+  right:0px;
+  height: 50%;
+  width: 40%;
+  font-size: 100%;
+   display: flex;
+  align-items: center;
+  justify-content: right;
+  font-weight: bold;
+  border-bottom: 1rpx solid rgb(129, 129, 129);
+}
+.totalDisp2{
+  position: absolute;
+  top:50%;
+  right:0px;
+  height: 50%;
+  width: 40%;
+  font-size: 100%;
+   display: flex;
+  align-items: center;
+  justify-content: right;
+  font-weight: bold;
+  border-bottom: 1rpx solid rgb(129, 129, 129);
+}
+
+.we-slide:nth-child(1){
+  background-color: whitesmoke
+}
+/*第二个界面背景色*/
+.we-slide:nth-child(2){
+  background-color: whitesmoke
+}
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  opacity: 0 
+}
+.cover0{
+  position: absolute;
+  top:0rpx;
+  left: 0rpx;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cover{
+  position: absolute;
+  top:0rpx;
+  left: 0rpx;
+  width: 100%;
+  height: 100%;
+  background: rgb(99, 99, 99);
+  opacity: 0.75;
+  z-index: 2;
+}
+.cover2{
+  width: 400rpx;
+  height: 500rpx;
+  background: rgb(118, 189, 255);
+  opacity: 1;
+  display: flex;
+   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 15;
+  border-radius: 25rpx;
+}
+.sendingGif{
+  width: 200rpx;
+  height: 200rpx;
+}
+.loadingText{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 110%;
+  font-weight: bold;
+}

@@ -1,0 +1,39 @@
+.test1{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 20%;
+  width: 100%;
+  background: cyan;
+}
+.test2{
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  height: 20%;
+  width: 100%;
+  background: rgb(0, 119, 255);
+}
+.test3{
+  position: absolute;
+  top: 80%;
+  left: 0%;
+  height: 20%;
+  width: 100%;
+  background: rgb(0, 0, 0);
+}
+.input{
+  position: absolute;
+  top: 20%;
+  left: 0%;
+  height: 10%;
+  width: 100%;
+}
+.inputDisp{
+  position: absolute;
+  top:50%;
+  left: 0%;
+  height: 40%;
+  width: 100%;
+  background: rgb(211, 229, 248);
+}

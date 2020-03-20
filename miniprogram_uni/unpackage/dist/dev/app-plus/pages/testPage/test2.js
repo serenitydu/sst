@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"testBut{ width: 50%; height: ",[0,100],"; background: rgb(245, 245, 163); }\n",],undefined,{path:"./pages/testPage/test2.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/testPage/test2.wxml') } }));

@@ -1,0 +1,388 @@
+
+Page{
+    width: 100%;
+    height: 100%;
+}
+.status_bar {
+	height: var(--status-bar-height);
+	width: 100%;
+}
+.searchBarCon{
+  position: absolute;
+  left: 0%;
+  height: 4%;
+  width: 100%;
+  background: whitesmoke;
+}
+.locationCon{
+	position: absolute;
+	height: 100%;
+	width: 20%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    font-size: 80%;
+}
+.searchBar{
+   position: absolute;
+   top:1%;
+   right:0%;
+   height: 90%;
+   border-radius: 25rpx;
+   border: 3rpx solid #ccc;
+
+}
+.searchInput{
+   position: absolute;
+   top:1%;
+   right:0%;
+   height: 90%;
+   width: 50%;
+}
+.searchIcon{
+  position: absolute;
+  top: 10%;
+  height: 80%;
+  z-index: 5;
+  border-radius: 10%;
+}
+/*图片不显示for some reason*/
+.locationIcon{
+  position: absolute;
+  top: 10%;
+  height: 80%;
+  z-index: 5;
+  border-radius: 10%;
+}
+/*社区用户头像*/
+.authImg{
+  position: absolute;
+  top: 26rpx;
+  left: 26rpx;
+  width: 98rpx;
+  height: 98rpx;
+  border-radius: 100%;
+}
+/*用户姓名*/
+.userNm{
+  position:absolute;
+  top: 26rpx;
+  left: 145rpx;
+  font-family: PingFangTC-Semibold;
+  text-align: left;
+  font-weight: bold;
+}
+/*社区图片*/
+.xiaoneiImg{
+  width: 400rpx;
+  height: 400rpx;
+  position: absolute;
+  left: 50rpx;
+  top: 220rpx;
+  z-index: 2;
+}
+.xiaoneiBcg{
+  width: 100%;
+  height: 100%;
+  filter: blur(25px) brightness(200%);
+}
+/*社区Block*/
+.xiaoneiBlock{
+  background-size:contain;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 800rpx; 
+}
+/*社区日期*/
+.comdate{
+  position: absolute;
+  top:80rpx;
+  left: 145rpx;
+  text-align: left;
+  font-size: 80%;
+  color: black;
+}
+
+/**“外卖，社区，签到”这几个按钮的格式
+    尝试优化过，炸了。。。
+    对应wxml 27-39行
+*/
+.redirector{
+  position: relative;
+  left:0px;
+  top: 8px;
+  height: 180rpx;
+}
+
+.pintuanEntry{
+  position: relative;
+  margin-top: 20px;
+  
+}
+.restaurant{
+  position: relative;
+  left:15rpx;
+  margin-top: 20rpx;
+  height: 280rpx;
+  width: 96%;
+  border-radius: 20rpx;
+  background: #ffffff;
+}
+.restaurant text{
+  margin-left: 30rpx;
+}
+.restaurant_title{
+  font-weight:bold;
+  font-size: 30;
+  font-stretch: ultra-expanded;
+}
+.restaurant_desp{
+  font-size: 20;
+  font-stretch: ultra-expanded;
+  color: gray;
+}
+.restaurant_phone{
+  font-size: 30;
+  font-style: italic;
+}
+.restaurantPic{
+  margin-top: 5rpx;
+  margin-left: 5rpx;
+  height: 270rpx;
+  width: 40%;
+  border-radius: 20rpx;
+  float: left;
+}
+
+.we-slide {
+    -webkit-flex-shrink: 0;
+    -ms-flex: 0 0 auto;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 7%;
+}
+/*主界面背景色*/
+.we-slide:nth-child(1){
+  background-color: whitesmoke
+}
+/*第二个界面背景色*/
+.we-slide:nth-child(2){
+  background-color: whitesmoke
+}
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  opacity: 0 
+}
+/*这两个先不要动，是控制最上面两行总体排版的*/
+.rowSelector{
+    width: 100%;
+    border-bottom: 2rpx solid #ccc;
+    text-align: center;
+    height: 88rpx;
+    line-height: 88rpx;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+/*这两个先不要动，是控制最上面两行总体排版的*/
+.colSelector{
+    width: 100%;
+    border-bottom: 2rpx solid #ccc;
+    text-align: center;
+    height: 50rpx;
+    line-height: 50rpx;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    font-size: 30rpx;
+}
+.swiper-tab-item{
+    width: 50%; 
+    color:#000000;
+}
+/*“二手交易”这几个按钮，按下去之后的颜色*/
+.active{
+    color:rgb(32, 57, 80);
+    border: 4rpx solid rgb(201, 229, 255);
+    background: #ffffff;
+    border-radius: 8px;
+}
+.swiper-tab-item1{
+    width: 100%; 
+    color:#000000;
+}
+/*“日常用品”这几个按钮，按下去之后的颜色*/
+.active1{
+    color:#ffffff;
+    background: rgb(32, 57, 80);
+    border-radius: 5px;
+}
+swiper{
+  text-align: center;
+  height: 100%;
+}
+.containerershou{
+  display: flex;
+}
+/*广告位格式*/
+.announcement{
+  position: absolute;
+  top:20rpx;
+  left:25rpx;
+  height: 200rpx;
+  width: 330rpx;
+  border-radius: 20rpx;
+  background: #ffffff;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  z-index: 15;
+}
+/*二手交易每个block的格式（第一列）*/
+.ershouItem1{
+  position: absolute;
+  left:2%;
+  height: 550rpx;
+  width: 47%;
+  border-radius: 10rpx;
+  background: #ffffff;
+  text-align: center;
+   overflow:hidden;
+   text-overflow:ellipsis;
+    white-space:nowrap;  
+}
+/*二手交易每个block的格式（第二列）*/
+.ershouItem2{
+  position: relative;
+  left:51%;
+  height:550rpx;
+  width: 47%;
+  border-radius: 10px;
+  background: #ffffff;
+  text-align: center;
+   overflow:hidden;
+   text-overflow:ellipsis;
+    white-space:nowrap;  
+}
+
+/*二手交易每个block里面图片的格式*/
+.ershouImg{
+  width: 100%;
+  table-layout: true;
+  height: 330rpx;
+  position: flex;
+  border-radius: 20rpx;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: rgb(233, 233, 233);
+}
+
+/*二手交易每个block里面标题的格式*/
+.ershouTitle{
+  position: relative; 
+  font-size: 36rpx; 
+  text-align: left;
+  left:15rpx;
+}
+.ershouDescription{
+  position: relative;
+  text-align: left;
+  font-size: 30rpx;
+  color: rgb(90, 90, 90);
+  left:15rpx;
+}
+/*二手交易每个block里面价格的格式*/
+.ershouPrice{
+  position: relative;
+  width: 330rpx; 
+  font-size: 32rpx; 
+  color: #ff5500;
+  text-align: left;
+  left:15rpx;
+}
+
+.AVcontainer1{
+  position: absolute;
+  left: 90rpx;
+  bottom: 30rpx;
+  /*row 横向  column 列表  */
+  flex-direction: column;
+}
+
+.authorimg{
+  border-radius: 10rpx;
+  position: absolute;
+  bottom:20rpx;
+  left:15rpx;
+  height: 60rpx;
+  width: 60rpx;
+}
+
+/*“出二手，技能提供”这几个按钮的格式*/
+/*前端实现方式以后可能会优化*/
+.comMn{
+  width:120rpx;
+  height:120rpx;
+  position:absolute; 
+  align-items: center;
+  justify-content: center;
+}
+.tab{
+	display: flex;
+	flex-direction: column;
+}
+.tab-nav{
+  position:relative;
+	height: 80rpx;
+	background: #fff;
+	border-bottom: 0.5rpx dotted #ddd;
+	display: flex;
+	line-height: 79rpx;
+	width: 120%;
+}
+.tab-line{
+	position: absolute;
+	left: 0;
+	bottom: -1rpx;
+	height: 4rpx;
+	background: #f7982a;
+	transition: all 0.3s;
+}
+.tab-content{
+	flex: 1;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.comMenuAll{
+  width:100%;
+  height:100%;
+  top:0;
+  position:absolute;
+  right:0;
+  background:#808080;
+  opacity:0.8;
+}
+.comMenuBG{
+  width:96%;
+  height:40%;
+  left: 2%;
+  top:60%;
+  position:absolute;
+  right:0;
+  background:#f5f5f5;
+  opacity:0.99;
+  border-radius: 30rpx;
+}
+.spLine{
+  width: 100%;
+  height: 2px;
+  border-top: solid #dfdfdf 1px;
+}
+.ershouAV{
+  position: relative;
+  top:95rpx;
+}

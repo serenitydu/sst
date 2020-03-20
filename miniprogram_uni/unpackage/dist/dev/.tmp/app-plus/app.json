@@ -1,0 +1,81 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/userInfo/userInfo",
+    "pages/showCP/showCP",
+    "pages/mercPage/mercIndex/mercIndex",
+    "pages/testPage/test2",
+    "pages/mercPage/manageItem/manageItem",
+    "pages/mercPage/addItem/addItem",
+    "pages/mercPage/manageStore/manageStore",
+    "pages/Pintuan/Pintuan",
+    "pages/pubReq/pubReq",
+    "pages/newAt/newAt",
+    "pages/pays/htvarify",
+    "pages/commu/commu",
+    "pages/inBox/inBox",
+    "pages/pays/pay",
+    "pages/pubPost/pubPost",
+    "pages/navi/navi",
+    "pages/Store/Store",
+    "pages/item/item",
+    "component/popup/popup",
+    "pages/testPage/testThird",
+    "component/payjs/payjs",
+    "pages/tuan/tuan",
+    "pages/xiaonei/xiaonei",
+    "pages/postmanage/postmanage",
+    "pages/ershou/ershou",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/userFile/userFile",
+    "pages/groupChat/groupChat"
+  ],
+  "window": {
+    "backgroundColor": "#FFD557",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFD557",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#403e3a",
+    "selectedColor": "#000000",
+    "borderStyle": "white",
+    "backgroundColor": "#FFD557",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "./static/icons/home.png",
+        "selectedIconPath": "./static/icons/home-active.png"
+      },
+      {
+        "text": "交易",
+        "pagePath": "pages/ershou/ershou",
+        "iconPath": "./static/icons/web.png",
+        "selectedIconPath": "./static/icons/web-active.png"
+      },
+      {
+        "text": "社区",
+        "pagePath": "pages/commu/commu",
+        "iconPath": "./static/icons/community.png",
+        "selectedIconPath": "./static/icons/community-active.png"
+      },
+      {
+        "text": "个人",
+        "pagePath": "pages/userInfo/userInfo",
+        "iconPath": "./static/icons/user.png",
+        "selectedIconPath": "./static/icons/user-active.png"
+      }
+    ]
+  },
+  "nvueCompiler": "uni-app",
+  "renderer": "auto",
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "miniprogram-1",
+  "compilerVersion": "2.5.1",
+  "usingComponents": {}
+}
