@@ -20,13 +20,16 @@ Page{
 	width: 20%;
     display: -webkit-box;
     display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-flow: column;
+        -ms-flex-flow: column;
             flex-flow: column;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
+        -ms-flex-pack: center;
             justify-content: center;
     font-size: 80%;
 }
@@ -161,7 +164,8 @@ Page{
 .we-slide {
     -webkit-flex-shrink: 0;
     -ms-flex: 0 0 auto;
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -189,13 +193,16 @@ Page{
     line-height: 88rpx;
     display: -webkit-box;
     display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-flow: row;
+        -ms-flex-flow: row;
             flex-flow: row;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
             justify-content: space-between;
 }
 /*这两个先不要动，是控制最上面两行总体排版的*/
@@ -207,13 +214,16 @@ Page{
     line-height: 50rpx;
     display: -webkit-box;
     display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-flow: row;
+        -ms-flex-flow: row;
             flex-flow: row;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
             justify-content: space-between;
     font-size: 30rpx;
 }
@@ -245,6 +255,7 @@ swiper{
 .containerershou{
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 /*广告位格式*/
@@ -258,12 +269,15 @@ swiper{
   background: #ffffff;
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+      -ms-flex-pack: center;
           justify-content: center; 
   -webkit-box-align: center; 
   -webkit-align-items: center; 
+      -ms-flex-align: center; 
           align-items: center;
   z-index: 15;
 }
@@ -277,7 +291,8 @@ swiper{
   background: #ffffff;
   text-align: center;
    overflow:hidden;
-   text-overflow:ellipsis;
+   -o-text-overflow:ellipsis;
+      text-overflow:ellipsis;
     white-space:nowrap;
 }
 /*二手交易每个block的格式（第二列）*/
@@ -290,7 +305,8 @@ swiper{
   background: #ffffff;
   text-align: center;
    overflow:hidden;
-   text-overflow:ellipsis;
+   -o-text-overflow:ellipsis;
+      text-overflow:ellipsis;
     white-space:nowrap;
 }
 /*二手交易每个block里面图片的格式*/
@@ -335,6 +351,7 @@ swiper{
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
+      -ms-flex-direction: column;
           flex-direction: column;
 }
 .authorimg{
@@ -353,18 +370,22 @@ swiper{
   position:absolute; 
   -webkit-box-align: center; 
   -webkit-align-items: center; 
+      -ms-flex-align: center; 
           align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+      -ms-flex-pack: center;
           justify-content: center;
 }
 .tab{
 	display: -webkit-box;
 	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
 	        flex-direction: column;
 }
 .tab-nav{
@@ -374,6 +395,7 @@ swiper{
 	border-bottom: 0.5rpx dotted #ddd;
 	display: -webkit-box;
 	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	line-height: 79rpx;
 	width: 120%;
@@ -385,11 +407,13 @@ swiper{
 	height: 4rpx;
 	background: #f7982a;
 	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
 .tab-content{
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
+	    -ms-flex: 1;
 	        flex: 1;
 	overflow-y: auto;
 	overflow-x: hidden;

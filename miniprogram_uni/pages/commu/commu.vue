@@ -25,7 +25,7 @@
       <view style="height:800rem; background: #ffffff;">
         <scroll-view :style="'height: ' + ratio + 'px'" scroll-y="true">
           <block v-for="(itemName, idx) in community" :key="idx"> 
-            <view class="xiaoneiBlock" :style="'height:'+ itemName.height + 'rpx;'" :data-naviParam="itemName" :data-commuId="itemName.comDir" :data-ind="idx" :data-commuListId="itemName._id" @tap="tapComu">
+            <view class="xiaoneiBlock" style = "background-size:contain; position: relative; z-index: 2; width: 100%;" :style="'height:'+ itemName.height + 'rpx;'" data-naviParam="itemName" data-commuId="itemName.comDir" data-ind="idx" data-commuListId="itemName._id" @tap="tapComu">
               <block>
                 <image :src="itemName.authorImg" class="authImg" mode="aspectFill"></image>
                 <view class="FLcontainer">
@@ -492,12 +492,24 @@ export default {
 			var post_index; //每一个帖子object
 			var post_height, text_top, detail_top, tags_top;
 			for (post_index in allist) {
-				post_height = 1180;//帖子高度
+				post_height = 1330;//帖子高度
 				detail_top = 760;//标题高度
 				text_top = 820;//正文高度
-				tags_top = 920;
+				tags_top = 1070;
 				//帖子较短的情况
 				if (allist[post_index].text.length < 20){
+					post_height -= 200;
+					tags_top -= 200;
+				}
+				else if (allist[post_index].text.length < 40){
+					post_height -= 150;
+					tags_top -= 150;
+				}
+				else if (allist[post_index].text.length < 60){
+					post_height -= 100;
+					tags_top -= 100;
+				}
+				else if (allist[post_index].text.length < 80){
 					post_height -= 50;
 					tags_top -= 50;
 				}
