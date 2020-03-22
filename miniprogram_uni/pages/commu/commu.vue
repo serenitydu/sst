@@ -25,7 +25,7 @@
       <view style="height:800rem; background: #ffffff;">
         <scroll-view :style="'height: ' + ratio + 'px'" scroll-y="true">
           <block v-for="(itemName, idx) in community" :key="idx"> 
-            <view class="xiaoneiBlock" style = "background-size:contain; position: relative; z-index: 2; width: 100%;" :style="'height:'+ itemName.height + 'rpx;'" data-naviParam="itemName" data-commuId="itemName.comDir" data-ind="idx" data-commuListId="itemName._id" @tap="tapComu">
+            <view class="xiaoneiBlock" :style="'height:'+ itemName.height + 'rpx;'" data-naviParam="itemName" data-commuId="itemName.comDir" data-ind="idx" data-commuListId="itemName._id" @tap="tapComu">
               <block>
                 <image :src="itemName.authorImg" class="authImg" mode="aspectFill"></image>
                 <view class="FLcontainer">
