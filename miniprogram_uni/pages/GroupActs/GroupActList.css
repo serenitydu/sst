@@ -1,42 +1,70 @@
 .container{
 	height: 100vh;
 	width: 100vw;
+	display: flex;
+	flex-wrap:wrap;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.adBc{
+	height: 250rpx;
+	width: 44vw;
+	background: #B8860B;
+	border-radius: 20rpx;
+	margin-left: 4vw;
+}
+.heading{
+	height: 1vh;
+	width: 100vw;
 }
 .gcBlock{
-	height: 760rpx;
-	width: 100vw;
+	height: 560rpx;
+	width: 44vw;
 	background: goldenrod;
+	border-radius: 20rpx;
+	margin-left: 4vw;
+}
+.gcBlock2{
+	height: 560rpx;
+	width: 44vw;
+	background: goldenrod;
+	border-radius: 20rpx;
+	margin-left: 4vw;
+	margin-top: -680rpx;
 }
 .nameBlock{
-	height:160rpx;
-	width: 100vw;
+	height:100rpx;
+	width: 44vw;
 	display: flex;
 	flex-direction: row;
-	
 	background: darkgoldenrod;
+	border-top-left-radius: 20rpx;
+	border-top-right-radius: 20rpx;
 }
 .avtBlock{
-	width:160rpx;
+	width:100rpx;
 }
 .infoBlock{
 }
 .avt{
 	position: relative;
-	top:20rpx;
-	left:20rpx;
-	height: 120rpx;
-	width: 120rpx;
+	top:10rpx;
+	left:10rpx;
+	height: 80rpx;
+	width: 80rpx;
 	border-radius: 100px;
 }
 .authorName{
-	height: 100rpx;
+	height: 50rpx;
 	width:100%;
-	font-size: 150%;
+	font-size: 100%;
 	font-weight: 700;
 }
 .dateStr{
-	height: 60rpx;
+	height: 50rpx;
 	width:100%;
+	font-size:70%;
 }
 .contentBlock{
 	height: 600rpx;
@@ -44,12 +72,13 @@
 }
 .contentImg{
 	position: relative;
-	height: 400rpx;
-	width:96vw;
-	left:2vw;
+	height: 300rpx;
+	width:42vw;
+	left:1vw;
 	top: 10rpx;
 }
 .descBlock{
 	height:190rpx;
-	width: 100vw;
+	width: 42vw;
+	word-wrap: break-word;
 }

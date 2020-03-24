@@ -1,8 +1,26 @@
 <template>
 	<view>
+		<view class="heading">
+			</view>
 		<view class="container">
+			<view class="adBc">afsafs</view>
 			<block v-for="(message, index) in gList" :key="index">
-				<view class="gcBlock" :data-naviParam="message.groupChatId" :data-naviParam2="message.groupChatTitle" @tap="tapGC">
+				<view  v-if="index%2!=0" class="gcBlock2" :data-naviParam="message.groupChatId" :data-naviParam2="message.groupChatTitle" @tap="tapGC">
+					<view class="nameBlock">
+						<view class="avtBlock">
+							<image :src="message.authorImg" class="avt" mode="aspectFill"></image>
+						</view>
+						<view class="infoBlock">
+							<view class="authorName">{{message.author}}</view>
+							<view class="dateStr">{{message.date}}</view>
+						</view>
+					</view>
+					<view class="contentBlock">
+						<image :src="message.img[0]" class="contentImg" mode="aspectFill"></image>
+						<view class="descBlock">{{message.desc}}</view>
+					</view>
+				</view>
+				<view v-else class="gcBlock" :data-naviParam="message.groupChatId" :data-naviParam2="message.groupChatTitle" @tap="tapGC">
 					<view class="nameBlock">
 						<view class="avtBlock">
 							<image :src="message.authorImg" class="avt" mode="aspectFill"></image>
