@@ -9,10 +9,10 @@
 }
 .adBc{
 	height: 250rpx;
-	width: 44vw;
-	background: #B8860B;
+	width: 47vw;
+	background: #F0F0F0;
 	border-radius: 20rpx;
-	margin-left: 4vw;
+	margin-left: 2vw;
 }
 .heading{
 	height: 1vh;
@@ -20,27 +20,27 @@
 }
 .gcBlock{
 	height: 560rpx;
-	width: 44vw;
-	background: goldenrod;
-	border-radius: 20rpx;
-	margin-left: 4vw;
+	width: 47vw;
+	background: #F0F0F0;
+	border-radius: 10rpx;
+	margin-left: 2vw;
 }
 .gcBlock2{
 	height: 560rpx;
-	width: 44vw;
-	background: goldenrod;
-	border-radius: 20rpx;
-	margin-left: 4vw;
+	width: 47vw;
+	background: #F0F0F0;
+	border-radius: 10rpx;
+	margin-left: 2vw;
 	margin-top: -680rpx;
 }
 .nameBlock{
 	height:100rpx;
-	width: 44vw;
+	width: 47vw;
 	display: flex;
 	flex-direction: row;
-	background: darkgoldenrod;
-	border-top-left-radius: 20rpx;
-	border-top-right-radius: 20rpx;
+	background: #EAEAEA;
+	border-top-left-radius: 10rpx;
+	border-top-right-radius: 10rpx;
 }
 .avtBlock{
 	width:100rpx;
@@ -73,12 +73,13 @@
 .contentImg{
 	position: relative;
 	height: 300rpx;
-	width:42vw;
+	width:45vw;
 	left:1vw;
 	top: 10rpx;
 }
 .descBlock{
 	height:190rpx;
-	width: 42vw;
+	width: 45vw;
+	margin-left: 1vw;
 	word-wrap: break-word;
 }
