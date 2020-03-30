@@ -9,8 +9,11 @@
 .message_send{
 	width: 100%;
 	height: 50px;
-	background:rgb(228, 228, 228);
 	opacity: 0.52;
+}
+.blankArea{
+	height: 1vw;
+	width: 100vw;
 }
 .confirm_but{
 	background:#ffc000;
@@ -35,10 +38,14 @@
 	opacity: 1;
 	border-radius: 5px;
 }
-.chatBubble{
-	width: 50%;
-	position: relative;
-	left:5vw;
+.msgDate{
+	display: -webkit-box;
+	text-overflow: ellipsis; 
+	word-wrap: break-word; 
+	white-space: normal !important;
+	-webkit-box-orient: vertical;
+	font-size: 60%;
+	color: #B8B8B8;
 }
 .msgText{
 	display: -webkit-box;
@@ -46,33 +53,54 @@
 	word-wrap: break-word; 
 	white-space: normal !important;
 	-webkit-box-orient: vertical;
-	background: #ffc000;
+	background: gainsboro;
 	border-radius: 15rpx;
+	width: 80vw;
+	margin-left: 14vw;
 }
-.blankSpace{
-	height: 2vh;
+.msgText2{
+	display: -webkit-box;
+	text-overflow: ellipsis; 
+	word-wrap: break-word; 
+	white-space: normal !important;
+	-webkit-box-orient: vertical;
+	background: gainsboro;
+	border-radius: 15rpx;
+	width: 80vw;
+	margin-left: 6vw;
 }
-.blankSpace2{
-	height: 2vh;
-}
-.msg_avt{
-	height: 10vw;
-	width: 10vw;
-	
-	border-radius: 100%;
-}
-.author_cont{
-	position: relative;
-	left: 5vw;
-	top:2vw;
+.chatArea{
+	width: 100vw;
 	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
+	min-height: 10vw;
 }
+
 .author_name{
 	position: relative;
 	left: 3vw;
 	font-size: 120%;
 	font-weight: 700;
 	color: #94AFCE;
+}
+
+.msg_avt1{
+	position: absolute;
+	left: 1vw;
+	height: 10vw;
+	width: 10vw;
+	border-radius: 100px;
+}
+.msg_avt2{
+	position: absolute;
+	right: 1vw;
+	height: 10vw;
+	width: 10vw;
+	border-radius: 100px;
+}
+.timeB{
+	display: flex;
+	justify-content: center;
+	height: 4vh;
+	width: 100vw;
+	align-items: flex-start;
 }

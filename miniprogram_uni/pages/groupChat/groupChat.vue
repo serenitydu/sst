@@ -1,15 +1,18 @@
 <template>
 	<view class="container">
 		<scroll-view class="message_rec" scroll-y="true">
+			<view class="blankArea"></view>
 			<block v-for="(message, index) in msgs" :key="index">
-				<view class="author_cont">
-					<image :src="message.avt" class="msg_avt" mode="aspectFill"></image>
-					<text class="author_name">{{message.unm}}</text>
+				<view v-if="userId!=message.open_Id" class="chatArea">
+					<image :src="message.avt" class="msg_avt1" mode="aspectFill"></image>
+					<text class="msgText">{{message.cnt}}</text>
 				</view>
-				<view class="chatBubble">
-						<view class="blankSpace"></view>
-						<text class="msgText">{{message.cnt}}</text>
-						<view class="blankSpace2"></view>
+				<view v-else class="chatArea">
+					<text class="msgText2">{{message.cnt}}</text>
+					<image :src="message.avt" class="msg_avt2" mode="aspectFill"></image>
+				</view>
+				<view class="timeB">
+					<text class="msgDate">{{message.tsp}}</text>
 				</view>
 			</block>
 		</scroll-view>
@@ -27,9 +30,13 @@
 				commentInput:"",
 				msgs:[],
 				chatRoom: "a",
+				userId:"nihao"
 			}
 		},
 		onLoad:function(){
+			this.setData({
+				userId:getApp().globalData.openId
+			})
 			var that=this;
 			this.setData({
 				chatRoom: getApp().globalData.chatRoom
@@ -42,6 +49,7 @@
 					chatRoom: that.chatRoom
 				},
 				success:function(res){
+					console.log(res);
 					that.setData({
 						msgs:res.data.Items[0].msgs
 					})
@@ -73,6 +81,10 @@
 				})
 			},
 			sendMsg:function(){
+				var dt=new Date();
+				var yr=dt.getYear()+1900;
+				var mn=dt.getMonth()+1;
+				var dtStr=yr.toString()+"-"+mn.toString()+"-"+dt.getDate().toString()+" "+dt.getHours().toString()+":"+dt.getMinutes().toString();
 				var that=this;
 				var oid=getApp().globalData.openId;
 				var unm=getApp().globalData.userNameGG;
@@ -87,7 +99,8 @@
 							avt:avt,
 							cnt:content,
 							unm:unm,
-							open_Id:oid
+							open_Id:oid,
+							tsp:dtStr
 						}],
 						chatRoom:that.chatRoom
 					},
