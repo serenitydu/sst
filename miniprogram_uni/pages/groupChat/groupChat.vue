@@ -5,10 +5,10 @@
 			<block v-for="(message, index) in msgs" :key="index">
 				<view v-if="userId!=message.open_Id" class="chatArea">
 					<image :src="message.avt" class="msg_avt1" mode="aspectFill"></image>
-					<text class="msgText">{{message.cnt}}</text>
+					<text class="msgText"><div class = "msgTextAlign">{{message.cnt}}</div></text>
 				</view>
 				<view v-else class="chatArea">
-					<text class="msgText2">{{message.cnt}}</text>
+					<text class="msgText2"><div class = "msgTextAlign">{{message.cnt}}</div></text>
 					<image :src="message.avt" class="msg_avt2" mode="aspectFill"></image>
 				</view>
 				<view class="timeB">

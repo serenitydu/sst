@@ -165,35 +165,35 @@
 		"backgroundColor": "#FFD557",
 		"list": [
 			{
-				"text": "社区",
+				"text": "松鼠酒馆",
 				"pagePath": "pages/commu/commu",
-				"iconPath": "./static/icons/community.png",
-				"selectedIconPath": "./static/icons/community-active.png"
+				"iconPath": "./static/navbar_icons/community.png",
+				"selectedIconPath": "./static/navbar_icons/community-active.png"
 			},
-			{
-				"text": "活动",
-				"pagePath": "pages/commu/commu",
-				"iconPath": "./static/icons/home-white.png",
-				"selectedIconPath": "./static/icons/home-white-active.png"
-			},
+			// {
+			// 	"text": "活动",
+			// 	"pagePath": "pages/commu/commu",
+			// 	"iconPath": "./static/navbar_icons/activity.png",
+			// 	"selectedIconPath": "./static/navbar_icons/activity-active.png"
+			// },
 			{
 				"text": "聊天",
 				"pagePath": "pages/groupChat/groupChatList",
-				"iconPath": "./static/icons/community.png",
-				"selectedIconPath": "./static/icons/community-active.png"
+				"iconPath": "./static/navbar_icons/chat.png",
+				"selectedIconPath": "./static/navbar_icons/chat-active.png"
 			},
 			{
-				"text": "交易",
+				"text": "跳蚤市场",
 				"pagePath": "pages/ershou/ershou",
-				"iconPath": "./static/icons/web.png",
-				"selectedIconPath": "./static/icons/web-active.png"
+				"iconPath": "./static/navbar_icons/store.png",
+				"selectedIconPath": "./static/navbar_icons/store-active.png"
 			},
 			
 			{
 				"text": "个人",
 				"pagePath": "pages/userInfo/userInfo",
-				"iconPath": "./static/icons/user.png",
-				"selectedIconPath": "./static/icons/user-active.png"
+				"iconPath": "./static/navbar_icons/user.png",
+				"selectedIconPath": "./static/navbar_icons/user-active.png"
 			}
 		]
 	},

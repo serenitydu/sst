@@ -47,7 +47,7 @@
 
   <view class="atc">
     <view class="img" :style="'background:' + (cost!=0?'#FFD161':'#E7E7E7') + ';'">
-      <image src="../../static/icons/trolley.png" style="width:60rpx; height:60rpx;"></image>
+      <image src="../../static/icons/shopping-cart-fill.png" style="width:60rpx; height:60rpx;"></image>
     </view>
     <button class="adtocart" hover-class="btn_hover">加入购物车</button>
   </view>

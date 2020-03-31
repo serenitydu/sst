@@ -16,10 +16,8 @@
   max-width: 600rpx;
   border: 2rpx solid #ccc;
   border-radius: 10rpx;
-  -webkit-box-sizing: bordre-box;
-          box-sizing: bordre-box;
+  box-sizing: bordre-box;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); 
   overflow: hidden;
   background: #fff;
@@ -38,25 +36,20 @@
 .wx-popup-btn {
   display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
           justify-content: space-around;
   margin-bottom: 40rpx;
 }
 .wx-popup-btn text {
   display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
           justify-content: center;
   width: 30%;
   height: 88rpx;

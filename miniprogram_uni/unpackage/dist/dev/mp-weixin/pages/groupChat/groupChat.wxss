@@ -9,8 +9,11 @@
 .message_send{
 	width: 100%;
 	height: 50px;
-	background:rgb(228, 228, 228);
 	opacity: 0.52;
+}
+.blankArea{
+	height: 1vw;
+	width: 100vw;
 }
 .confirm_but{
 	background:#ffc000;
@@ -18,16 +21,13 @@
 	position: absolute;
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: row;
-	    -ms-flex-direction: row;
 	        flex-direction: row;
 	-webkit-box-pack: center;
 	-webkit-justify-content: center;
-	    -ms-flex-pack: center;
 	        justify-content: center;
 	right: 10rpx;
 	bottom: 10px;
@@ -35,7 +35,6 @@
 	width: 150rpx;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
 	        align-items: center;
 }
 .inputArea{
@@ -48,50 +47,43 @@
 	opacity: 1;
 	border-radius: 5px;
 }
-.chatBubble{
-	width: 50%;
-	position: relative;
-	left:5vw;
-}
-.msgText{
+.msgDate{
 	display: -webkit-box;
-	-o-text-overflow: ellipsis;
-	   text-overflow: ellipsis; 
+	text-overflow: ellipsis; 
 	word-wrap: break-word; 
 	white-space: normal !important;
 	-webkit-box-orient: vertical;
-	background: #ffc000;
+	font-size: 60%;
+	color: #B8B8B8;
+}
+.msgText{
+	display: -webkit-box;
+	text-overflow: ellipsis; 
+	word-wrap: break-word; 
+	white-space: normal !important;
+	-webkit-box-orient: vertical;
+	background: gainsboro;
 	border-radius: 15rpx;
+	width: 80vw;
+	margin-left: 14vw;
 }
-.blankSpace{
-	height: 2vh;
+.msgText2{
+	display: -webkit-box;
+	text-overflow: ellipsis; 
+	word-wrap: break-word; 
+	white-space: normal !important;
+	-webkit-box-orient: vertical;
+	background: gainsboro;
+	border-radius: 15rpx;
+	width: 80vw;
+	margin-left: 6vw;
 }
-.blankSpace2{
-	height: 2vh;
-}
-.msg_avt{
-	height: 10vw;
-	width: 10vw;
-	
-	border-radius: 100%;
-}
-.author_cont{
-	position: relative;
-	left: 5vw;
-	top:2vw;
+.chatArea{
+	width: 100vw;
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-	-webkit-box-pack: start;
-	-webkit-justify-content: flex-start;
-	    -ms-flex-pack: start;
-	        justify-content: flex-start;
+	min-height: 10vw;
 }
 .author_name{
 	position: relative;
@@ -99,5 +91,32 @@
 	font-size: 120%;
 	font-weight: 700;
 	color: #94AFCE;
+}
+.msg_avt1{
+	position: absolute;
+	left: 1vw;
+	height: 10vw;
+	width: 10vw;
+	border-radius: 100px;
+}
+.msg_avt2{
+	position: absolute;
+	right: 1vw;
+	height: 10vw;
+	width: 10vw;
+	border-radius: 100px;
+}
+.timeB{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	height: 4vh;
+	width: 100vw;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	        align-items: flex-start;
 }
 
