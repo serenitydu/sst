@@ -1,0 +1,102 @@
+.container{
+	width:100vw;
+	height: 90vh;
+}
+.botPanel{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width:100vw;
+	height: 8%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.topPanel{
+	width:100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	flex-wrap: nowrap;
+	
+}
+.authPanel{
+	width:100vw;
+	height: 10vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: nowrap;
+}
+.avt{
+	margin-left: 1vh;
+	margin-top: 1vh;
+	margin-right: 1vh;
+	width: 8vh;
+	height: 8vh;
+	border-radius: 100px;
+}
+.nameSpace{
+	margin-left: 2vw;
+	width: 30vh;
+	height: 10vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.names{
+	font-size: 80%;
+	color: #B8B8B8;
+}
+.imgDisp{
+	width: 100vw;
+	height: 84vw;
+}
+.swiper{
+	margin-left: 2vw;
+	margin-top: 2vw;
+	height: 80vw;
+	width: 96vw;
+}
+.lbt{
+	height: 100%;
+	width: 100%;
+}
+.desc{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.txts{
+	margin-left: 2vw;
+	font-size: 150%;
+	color: black;
+	font-weight: 600;
+}
+.txts2{
+	margin-left: 4vw;
+	font-size: 100%;
+	color: black;
+	word-wrap: break-word;
+}
+.joinBt{
+	height: 6vh;
+	width: 40vw;
+	text-align: center;
+	background: bisque;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.spaceA{
+	background: #e0e0e0;
+	width: 100vw;
+	height: 1vh;
+	
+}
+.txts3{
+	font-size: 140%;
+	color: black;
+	font-weight: 800;
+}

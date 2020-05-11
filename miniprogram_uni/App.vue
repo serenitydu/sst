@@ -105,7 +105,8 @@
 			openId:'nihao',
 			var1:'111',
 			userAvatarUrlGG:'http://cdn.onlinewebfonts.com/svg/img_258083.png',
-			userNameGG:'还未登录 请先登录'
+			userNameGG:'还未登录 请先登录',
+			groupActInfo:{}
 		},
 		methods: {}
 	};

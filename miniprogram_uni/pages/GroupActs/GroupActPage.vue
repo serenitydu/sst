@@ -1,41 +1,32 @@
 <template>
-	<view>
-		<view class="heading">
+	<view class="container">
+		<view class="topPanel">
+			<view class="authPanel">
+				<image :src="gInfo.authorImg" class="avt" mode="aspectFill"></image>
+				<view class="nameSpace">
+					<text class="names">{{gInfo.author}}</text>
+					<text class="names">{{gInfo.date}}</text>
+				</view>
 			</view>
-		<view class="container">
-			<view class="adBc">afsafs</view>
-			<block v-for="(message, index) in gList" :key="index">
-				<view  v-if="index%2!=0" class="gcBlock2" :data-naviParam="message.groupChatId" :data-naviParam2="message.groupChatTitle" :data-naviParam3="index" @tap="tapGC1">
-					<view class="nameBlock">
-						<view class="avtBlock">
-							<image :src="message.authorImg" class="avt" mode="aspectFill"></image>
-						</view>
-						<view class="infoBlock">
-							<view class="authorName">{{message.author}}</view>
-							<view class="dateStr">{{message.date}}</view>
-						</view>
-					</view>
-					<view class="contentBlock">
-						<image :src="message.img[0]" class="contentImg" mode="aspectFill"></image>
-						<view class="descBlock">{{message.desc}}</view>
-					</view>
-				</view>
-				<view v-else class="gcBlock" :data-naviParam="message.groupChatId" :data-naviParam2="message.groupChatTitle" :data-naviParam3="index" @tap="tapGC1">
-					<view class="nameBlock">
-						<view class="avtBlock">
-							<image :src="message.authorImg" class="avt" mode="aspectFill"></image>
-						</view>
-						<view class="infoBlock">
-							<view class="authorName">{{message.author}}</view>
-							<view class="dateStr">{{message.date}}</view>
-						</view>
-					</view>
-					<view class="contentBlock">
-						<image :src="message.img[0]" class="contentImg" mode="aspectFill"></image>
-						<view class="descBlock">{{message.desc}}</view>
-					</view>
-				</view>
-			</block>
+			<view class="imgDisp">
+				<swiper class="swiper" autoplay="true" interval="5000" duration="1000" >
+				  <block v-for="(item, index) in gInfo.img" :key="index">
+					<swiper-item>
+					  <image :src="item" class="lbt" mode="aspectFill"></image>
+					</swiper-item>
+				  </block>
+				</swiper>
+			</view>
+			<view class="desc">
+				<text class="txts">{{gInfo.title}}</text>
+				<text class="txts2">{{gInfo.desc}}</text>
+			</view>
+		</view>
+		<view class="spaceA"></view>
+		<view class="botPanel">
+			<view class="joinBt" :data-naviParam="gInfo.groupChatId" :data-naviParam2="gInfo.groupChatTitle"  @tap="tapGC">
+				<text class="txts3">加入群聊</text>
+			</view>
 		</view>
 	</view>
 </template>
@@ -44,47 +35,18 @@
 	export default {
 		data() {
 			return {
-				gList:[],
-				oid:""
+				gInfo:{}
 			}
 		},
 		onLoad:function(){
-			var that=this;
+			console.log("saffsafsafs");
 			this.setData({
-				oid:getApp().globalData.openId
+				gInfo:getApp().globalData.groupActInfo
 			})
-			this.setData({
-				oid:"uow02122019170522oiw"
-			})
-			uni.request({
-				url:"https://lej4kht0ig.execute-api.us-east-2.amazonaws.com/CLF/getfromdb",
-				method: "POST",
-				data:{
-					mode:2,
-					target:"GroupActs"
-				},
-				success:function(res){
-					console.log(res.data.Items);
-					that.setData({
-						gList:res.data.Items
-					})
-					
-					
-					
-				}
-			})
-			
-		   
+		   console.log(getApp().globalData.groupActInfo);
 		   
 		},
-		//uow02122019170522oiw
 		methods: {
-			tapGC1:function(e){
-				getApp().globalData.groupActInfo=this.gList[e.currentTarget.dataset.naviparam3];
-				uni.navigateTo({
-					url:"./GroupActPage"
-				})
-			},
 			tapGC:function(e){
 				var that=this;
 				var asp={
@@ -195,7 +157,7 @@
 		}
 	}
 </script>
-
 <style>
-@import "./GroupActList.css";
+	@import "./GroupActPage.css";
 </style>
+

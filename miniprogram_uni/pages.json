@@ -154,6 +154,10 @@
             "path" : "pages/userFile/userFile",
             "style" : {}
         }
+        ,{
+            "path" : "pages/GroupActs/GroupActPage",
+            "style" : {}
+        }
     ],
 	"navigateToMiniProgramAppIdList": [
 		"wx959c8c1fb2d877b5"
