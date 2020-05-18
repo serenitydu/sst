@@ -2,8 +2,13 @@
 	<view class="container">
 		<block v-for="(message, index) in gcList" :key="index">
 			<view class="gcBlock" :data-naviParam="message.id"  @tap="tapGC">
-				<image src="https://lh3.googleusercontent.com/proxy/NTs3N4l4_gF8G_ihPo0SVsV9ZsX2oS2HPf5viWyZPp93IrJEYf5VxiBpgAGpS3UAFkIiIslxRR1fqO-0l1Iw48MfGglWA0J-UAAKWDtnwtEHxoka8gB7OgWPxy3JUA" class="groupImg"></image>
-				<text class="titleText">{{message.title}}</text>
+				<span class = "imageBlock">
+					<image src="../../static/bear-smile-line.png" class="groupImg"></image>
+				</span>
+				<span class = "titleBlock">
+					<text class="titleText">{{message.title}}</text>
+				</span>
+				
 			</view>
 		</block>
 	</view>

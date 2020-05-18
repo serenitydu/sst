@@ -16,7 +16,7 @@
 	width: 100vw;
 }
 .confirm_but{
-	background:#ffc000;
+	background:#FFD557;
 	color:white;
 	position: absolute;
 	display: flex;
@@ -50,7 +50,7 @@
 .msgText{
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
-	background: gainsboro;
+	background: #ececec80;
 	border-radius: 15rpx;
 	width: 80vw;
 	margin-left: 14vw;
@@ -65,7 +65,7 @@
 .msgText2{
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
-	background: gainsboro;
+	background: #ececec80;
 	border-radius: 15rpx;
 	width: 80vw;
 	margin-left: 6vw;
