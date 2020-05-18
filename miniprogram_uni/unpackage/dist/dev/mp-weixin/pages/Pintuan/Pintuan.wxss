@@ -16,7 +16,8 @@
   max-width: 600rpx;
   border: 2rpx solid #ccc;
   border-radius: 10rpx;
-  box-sizing: bordre-box;
+  -webkit-box-sizing: bordre-box;
+          box-sizing: bordre-box;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); 
   overflow: hidden;

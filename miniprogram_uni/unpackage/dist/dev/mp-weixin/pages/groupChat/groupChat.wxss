@@ -58,20 +58,21 @@
 }
 .msgText{
 	display: -webkit-box;
-	text-overflow: ellipsis; 
-	word-wrap: break-word; 
-	white-space: normal !important;
 	-webkit-box-orient: vertical;
 	background: gainsboro;
 	border-radius: 15rpx;
 	width: 80vw;
 	margin-left: 14vw;
 }
+.msgTextAlign{
+	padding: 0rpx 16rpx;
+	vertical-align: middle;
+	word-break: break-all;
+	text-overflow: ellipsis;
+	white-space: normal !important;
+}
 .msgText2{
 	display: -webkit-box;
-	text-overflow: ellipsis; 
-	word-wrap: break-word; 
-	white-space: normal !important;
 	-webkit-box-orient: vertical;
 	background: gainsboro;
 	border-radius: 15rpx;
