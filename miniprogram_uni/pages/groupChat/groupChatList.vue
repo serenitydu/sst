@@ -3,7 +3,7 @@
 		<block v-for="(message, index) in gcList" :key="index">
 			<view class="gcBlock" :data-naviParam="message.id"  @tap="tapGC">
 				<span class = "imageBlock">
-					<image src="../../static/bear-smile-line.png" class="groupImg"></image>
+					<image :src="message.firstAvat" class="groupImg"></image>
 				</span>
 				<span class = "titleBlock">
 					<text class="titleText">{{message.title}}</text>
