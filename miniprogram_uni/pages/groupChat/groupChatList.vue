@@ -5,20 +5,19 @@
 				<span class = "imageBlock">
 					<image :src="message.firstAvat" class="groupImg"></image>
 				</span>
-				<span class = "textBlock">
-					<ul style="list-style-type:none;padding-left: 0px;">
-						<li style="list-style-type:none">
-							<text class="titleText">{{message.title}}</text>
-						</li>
-						<li style="list-style-type:none">
-							<text class="messageText">{{message.title}}</text>
-						</li>
-						<li style="list-style-type:none">
-							<text class="timeText">{{message.title}}</text>
-						</li>
-					</ul>
+				<view class = "textBlock">
+					<view class = "fLine">
+						<text class="titleText">{{message.title}}</text>
+						<text class="timeText">{{message.tsp}}</text>
+						
+					</view>
+					<view class = "sLine">
+						<text class="messageText">{{message.lastMsg}}</text>
+						
+						
+					</view>
 					
-				</span>
+				</view>
 				
 			</view>
 		</block>
@@ -43,12 +42,36 @@
 					openId: getApp().globalData.openId
 				},
 				success:function(res){
-					console.log(res.data);
-					
-					var gc=res.data
+					var gc=res.data;
 					that.setData({
 						gcList:gc
 					})
+					var tmp=that.gcList
+					for (var ids in that.gcList){
+						uni.request({
+							url:"https://lej4kht0ig.execute-api.us-east-2.amazonaws.com/CLF/groupchatmtd",
+							method: "POST",
+							data:{
+								mode:7,
+								chatRoomId: that.gcList[ids].id
+							},
+							success:function(res){
+								var i=0;
+								for (i=0;i<tmp.length;i++){
+									if (tmp[i].id==res.data.chatRoomId){
+										tmp[i].lastMsg=res.data.cnt;
+										tmp[i].tsp=res.data.timeStp;
+										break;
+									}
+								}
+								that.setData({
+									gcList:tmp
+								})
+								console.log(that.gcList);
+								
+							}
+						})
+					}
 					
 				}
 			})

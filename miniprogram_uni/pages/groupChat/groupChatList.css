@@ -19,6 +19,21 @@
 	width: 80%;
 	float: left;
 	height: 160rpx;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+.fLine{
+	height: 40%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+}
+.sLine{
+	height: 60%;
+	width: 100%;
 }
 .groupImg{
 	border-radius: 10rpx;
@@ -28,15 +43,16 @@
 	width: 80rpx;
 }
 .titleText{
-	position: relative;
-	top:20rpx;
 	letter-spacing:4rpx;
+	margin-left: 8rpx;
 }
 .messageText{
-	font-size: 70%;
+	font-size: 90%;
 	color: #8a8a8a;
+	margin-left: 25rpx;
 }
 .timeText{
 	font-size: 70%;
 	color: #B8B8B8;
+	margin-right: 15rpx;
 }
