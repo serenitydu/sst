@@ -174,12 +174,12 @@
 				"iconPath": "./static/navbar_icons/community.png",
 				"selectedIconPath": "./static/navbar_icons/community-active.png"
 			},
-			// {
-			// 	"text": "活动",
-			// 	"pagePath": "pages/commu/commu",
-			// 	"iconPath": "./static/navbar_icons/activity.png",
-			// 	"selectedIconPath": "./static/navbar_icons/activity-active.png"
-			// },
+			{
+			 	"text": "活动",
+			 	"pagePath": "pages/GroupActs/GroupActList",
+			 	"iconPath": "./static/navbar_icons/activity.png",
+			 	"selectedIconPath": "./static/navbar_icons/activity-active.png"
+			},
 			{
 				"text": "聊天",
 				"pagePath": "pages/groupChat/groupChatList",
