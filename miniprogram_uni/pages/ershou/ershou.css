@@ -339,7 +339,6 @@ swiper{
   position:relative;
 	height: 80rpx;
 	background: #fff;
-	border-bottom: 0.5rpx dotted #ddd;
 	display: flex;
 	line-height: 79rpx;
 	width: 120%;
