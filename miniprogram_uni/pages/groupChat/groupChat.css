@@ -90,14 +90,14 @@
 	left: 1vw;
 	height: 10vw;
 	width: 10vw;
-	border-radius: 100px;
+	border-radius: 15rpx;
 }
 .msg_avt2{
 	position: absolute;
 	right: 1vw;
 	height: 10vw;
 	width: 10vw;
-	border-radius: 100px;
+	border-radius: 15rpx;
 }
 .timeB{
 	display: flex;

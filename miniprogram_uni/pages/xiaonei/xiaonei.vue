@@ -12,9 +12,11 @@
           <view class="username_lvl">
             <view class="username">{{author}}</view>
             <view class="lvlInd1" :style="'color:' + aAcolor">lvl{{authorLvl}}</view>
-          </view>
+		  </view>
           <view class="date">{{date}}</view>
         </view>
+		<image src="../../static/more-2-line.png" class="moreFunction"></image>
+		
       </view>
       
       <!--帖子名-->

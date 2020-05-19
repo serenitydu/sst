@@ -32,6 +32,15 @@
   color: goldenrod;
   font-weight: bold;
 }
+.moreFunction{
+	position: absolute;
+	right:30rpx;
+	top:30rpx;
+	height: 40rpx;
+	width: 40rpx;
+    margin-right: 0px;
+}
+
 /*评论，点赞图标*/
 .vote_comment_icon{
   position: relative;
