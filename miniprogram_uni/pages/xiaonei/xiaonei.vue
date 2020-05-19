@@ -15,7 +15,7 @@
 		  </view>
           <view class="date">{{date}}</view>
         </view>
-		<image src="../../static/more-2-line.png" class="moreFunction"></image>
+		<image src="../../static/more-2-line.png" class="moreFunction" @tap="reportThis"></image>
 		
       </view>
       
@@ -255,7 +255,9 @@ export default {
         currency: tmpInfo.currency
       });
     },
-
+	reportThis(){
+		
+	},
     // 预览图片
     previewImg(event) {
       var src = event.currentTarget.dataset.src; //获取data-src

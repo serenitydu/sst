@@ -2,14 +2,13 @@
 	<view class="container">
 		<block v-for="(message, index) in gcList" :key="index">
 			<view class="gcBlock" :data-naviParam="message.id"  @tap="tapGC">
-				<span class = "imageBlock">
+				<view class = "imageBlock">
 					<image :src="message.firstAvat" class="groupImg"></image>
-				</span>
+				</view>
 				<view class = "textBlock">
 					<view class = "fLine">
 						<text class="titleText">{{message.title}}</text>
 						<text class="timeText">{{message.tsp}}</text>
-						
 					</view>
 					<view class = "sLine">
 						<text class="messageText">{{message.lastMsg}}</text>
