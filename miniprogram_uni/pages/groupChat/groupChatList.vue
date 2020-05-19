@@ -5,8 +5,19 @@
 				<span class = "imageBlock">
 					<image :src="message.firstAvat" class="groupImg"></image>
 				</span>
-				<span class = "titleBlock">
-					<text class="titleText">{{message.title}}</text>
+				<span class = "textBlock">
+					<ul style="list-style-type:none;padding-left: 0px;">
+						<li style="list-style-type:none">
+							<text class="titleText">{{message.title}}</text>
+						</li>
+						<li style="list-style-type:none">
+							<text class="messageText">{{message.title}}</text>
+						</li>
+						<li style="list-style-type:none">
+							<text class="timeText">{{message.title}}</text>
+						</li>
+					</ul>
+					
 				</span>
 				
 			</view>

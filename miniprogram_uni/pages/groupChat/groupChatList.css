@@ -15,7 +15,7 @@
 	float: left;
 	height: 160rpx;
 }
-.titleBlock{
+.textBlock{
 	width: 80%;
 	float: left;
 	height: 160rpx;
@@ -28,8 +28,15 @@
 	width: 80rpx;
 }
 .titleText{
-	vertical-align: middle;
 	position: relative;
-	top:30rpx;
+	top:20rpx;
 	letter-spacing:4rpx;
+}
+.messageText{
+	font-size: 70%;
+	color: #8a8a8a;
+}
+.timeText{
+	font-size: 70%;
+	color: #B8B8B8;
 }
