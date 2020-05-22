@@ -15,7 +15,7 @@
 		  </view>
           <view class="date">{{date}}</view>
         </view>
-		<image src="../../static/more-2-line.png" class="moreFunction" @tap="reportThis"></image>
+		<image src="../../static/more-2-line.png" class="moreFunction" @tap="openMenu"></image>
 		
       </view>
       
@@ -71,20 +71,14 @@
 
   </scroll-view>
 
-	<view v-if="report" style="width:100%;height:100%;top:0; position:absolute;right:0;background:#808080; opacity:0.8;" @tap="reportThis"></view>
-	  <view v-if="report" style="width:100%;height:50%;top:60%; position:absolute;right:0;background:#f5f5f5; opacity:0.99;border-radius: 30rpx;">
-		<view class="comMn" style="left:17.5%; top:30%" data-postR="出二手" @tap="">
-		  <image src="../../static/icons/ershou.png" style="width: 120rpx; height:120rpx; position: absolute;" mode="aspectFill"></image>
-		</view>
-		<text style="position:absolute;top:55%;left:21%;font-size:35rpx;">活动</text>
-	  </view>
+	
+	 
   <!--底部评论输入，按钮-->
   <view class="botBlock">
 	<button class="cmtBt" open-type="getUserInfo" @tap="upcomment">发送</button>
 	<input name="psw" placeholder="输入评论" :value="commentInput" @input="setpos" class="botBut1"></input>
   </view>
 </view>
-
 <view v-if="commenting" class="cover0">
   <view class="cover2">
     <image src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/04de2e31234507.564a1d23645bf.gif" class="sendingGif"></image>
@@ -93,6 +87,35 @@
   
   <view class="cover">
   </view>
+</view>
+<view v-if="menuOn" class="reportPanel" >
+	<view class="reportBack" @tap="openMenu">
+	</view>
+	<view class="menuCnt" >
+		<view class="menuButs" @tap="openReport">
+			<image src="../../static/morebar_icons/forbid-line.png" mode="aspectFill" class="menuImgs" ></image>
+			<text class="menuTxts">举报</text>
+		</view>
+		<view class="menuButs" @tap="openReport">
+			<image src="../../static/morebar_icons/qq-fill.png" mode="aspectFill" class="menuImgs" ></image>
+			<text class="menuTxts">分享到QQ</text>
+		</view>
+		<view class="menuButs" @tap="openReport">
+			<image src="../../static/morebar_icons/wechat-fill.png" mode="aspectFill" class="menuImgs" ></image>
+			<text class="menuTxts">分享到微信</text>
+		</view>
+	</view>
+</view>
+<view v-if="report" class="reportPanel" >
+		<view class="reportBack" @tap="openReport">
+			
+				
+		</view>
+		<view class="reportCnt" >
+			<view class="reportTop">举报</view>
+			<textarea  class="reportReason" @input="changeRptRsn" placeholder="请输入举报理由" />
+			<view class="reportBut" @tap="reportThis">举报</view>
+		</view>
 </view>
 </view>
 </template>
@@ -138,6 +161,9 @@ export default {
       commentInput: "",
       sttOid: "",
 	  report: false,
+	  rptRsn:"",
+	  reporting:false,
+	  menuOn:false
     };
   },
 
@@ -245,6 +271,17 @@ export default {
   },
 
   methods: {
+	  changeRptRsn(e){
+		  this.setData({
+			  rptRsn:e.target.value
+		  })
+	  },
+	  openReport(){
+		this.report=!this.report;
+	  },
+	  openMenu(){
+		this.menuOn=!this.menuOn;
+	  },
     updateTuanInfoFromDB() {
       var tmpInfo;
 
@@ -263,22 +300,36 @@ export default {
       });
     },
 	reportThis(){
-		var rptOid=getApp().globalData.openId;
-		/*
-		uni.request({
-			url: 'https://lej4kht0ig.execute-api.us-east-2.amazonaws.com/CLF/reportfunc',
-			method:'POST',
-		  data: {
-		    reporterOid: rptOid,
-			cId: comid,
-			reason: "",
-			type:"xiaonei"
-		  },
-		  success:function(res){
-			  
-		  },
-		})
-		*/
+		if (!this.reporting){
+			this.reporting=true;
+				var that=this;
+				var rptOid=getApp().globalData.openId;
+			if ((that.rptRsn.length==0) || (rptOid=="nihao")){
+				
+				that.setData({
+					reporting:false
+				})
+				return;
+			}
+				uni.request({
+					url: 'https://lej4kht0ig.execute-api.us-east-2.amazonaws.com/CLF/reportfunc',
+					method:'POST',
+				  data: {
+					  mode:1,
+				    reporterOid: rptOid,
+					cId: comid,
+					reason: that.rptRsn,
+					type:"xiaonei"
+				  },
+				  success:function(res){
+					console.log("reported");
+					that.setData({
+						reporting:false,
+						report:false
+					})
+				  },
+				})
+		}
 	},
     // 预览图片
     previewImg(event) {
