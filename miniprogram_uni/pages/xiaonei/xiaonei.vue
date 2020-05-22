@@ -71,6 +71,13 @@
 
   </scroll-view>
 
+	<view v-if="report" style="width:100%;height:100%;top:0; position:absolute;right:0;background:#808080; opacity:0.8;" @tap="reportThis"></view>
+	  <view v-if="report" style="width:100%;height:50%;top:60%; position:absolute;right:0;background:#f5f5f5; opacity:0.99;border-radius: 30rpx;">
+		<view class="comMn" style="left:17.5%; top:30%" data-postR="出二手" @tap="">
+		  <image src="../../static/icons/ershou.png" style="width: 120rpx; height:120rpx; position: absolute;" mode="aspectFill"></image>
+		</view>
+		<text style="position:absolute;top:55%;left:16.5%;font-size:35rpx;">跳蚤市场</text>
+	  </view>
   <!--底部评论输入，按钮-->
   <view class="botBlock">
 	<button class="cmtBt" open-type="getUserInfo" @tap="upcomment">发送</button>
@@ -129,7 +136,8 @@ export default {
       postid: "",
       aid: "",
       commentInput: "",
-      sttOid: ""
+      sttOid: "",
+	  report: false,
     };
   },
 
@@ -256,7 +264,9 @@ export default {
       });
     },
 	reportThis(){
-		
+		this.setData({
+		  comMenu: !this.report
+		});
 	},
     // 预览图片
     previewImg(event) {
