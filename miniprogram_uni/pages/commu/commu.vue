@@ -25,7 +25,7 @@
       <view style="height:800rem; background: #ffffff;">
         <scroll-view :style="'height: ' + ratio + 'px'" scroll-y="true">
           <block v-for="(itemName, idx) in community" :key="idx"> 
-            <view class="xiaoneiBlock" :style="'height:'+ itemName.height + 'rpx;'" :data-naviParam="itemName" :data-commuId="itemName.comDir" data-ind="idx" data-commuListId="itemName._id" @tap="tapComu">
+            <view class="xiaoneiBlock" :style="'height:'+ itemName.height + 'rpx;'" :data-naviParam="itemName" :data-commuId="itemName.comDir" :data-ind="idx" :data-commuListId="itemName._id" @tap="tapComu">
               <block>
                 <image :src="itemName.authorImg" class="authImg" mode="aspectFill"></image>
                 <view class="FLcontainer">
@@ -259,9 +259,7 @@ export default {
 
       getApp().globalData.var1 = e.currentTarget.dataset.commuid; //取得全局变量需要的值
 
-      console.log("SSSSSSSSSS"+e.currentTarget.dataset.commulistid);
       var cid = e.currentTarget.dataset.commulistid;
-      console.log(e.currentTarget.dataset.commulistid);
       getApp().globalData.cmulid = e.currentTarget.dataset.commuid; //取得全局变量需要的值
 
       uni.request({
@@ -269,8 +267,7 @@ export default {
       	method: 'POST',
         data: {
           postId: cid,
-          mode: 2,
-		  openId:app.openId
+          mode: 2
         },
         success: function (res) {
           var tmpList = that.community;

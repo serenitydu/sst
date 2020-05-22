@@ -172,7 +172,6 @@ export default {
           mode: 1
         },
 		success: (res) => {
-				  console.log(res);
 			this.setData({
 			  comments: res.data.Items[0].comments,
 			  des: res.data.Items[0].desc,
@@ -256,7 +255,22 @@ export default {
       });
     },
 	reportThis(){
-		
+		var rptOid=getApp().globalData.openId;
+		/*
+		uni.request({
+			url: 'https://lej4kht0ig.execute-api.us-east-2.amazonaws.com/CLF/reportfunc',
+			method:'POST',
+		  data: {
+		    reporterOid: rptOid,
+			cId: comid,
+			reason: "",
+			type:"xiaonei"
+		  },
+		  success:function(res){
+			  
+		  },
+		})
+		*/
 	},
     // 预览图片
     previewImg(event) {
