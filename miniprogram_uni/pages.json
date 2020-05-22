@@ -169,7 +169,7 @@
 		"backgroundColor": "#FFD557",
 		"list": [
 			{
-				"text": "松鼠酒馆",
+				"text": "社区",
 				"pagePath": "pages/commu/commu",
 				"iconPath": "./static/navbar_icons/community.png",
 				"selectedIconPath": "./static/navbar_icons/community-active.png"
@@ -186,13 +186,14 @@
 				"iconPath": "./static/navbar_icons/chat.png",
 				"selectedIconPath": "./static/navbar_icons/chat-active.png"
 			},
+			/**
 			{
 				"text": "跳蚤市场",
 				"pagePath": "pages/ershou/ershou",
 				"iconPath": "./static/navbar_icons/store.png",
 				"selectedIconPath": "./static/navbar_icons/store-active.png"
 			},
-			
+			*/
 			{
 				"text": "个人",
 				"pagePath": "pages/userInfo/userInfo",

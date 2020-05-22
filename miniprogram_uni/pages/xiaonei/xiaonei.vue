@@ -76,7 +76,7 @@
 		<view class="comMn" style="left:17.5%; top:30%" data-postR="出二手" @tap="">
 		  <image src="../../static/icons/ershou.png" style="width: 120rpx; height:120rpx; position: absolute;" mode="aspectFill"></image>
 		</view>
-		<text style="position:absolute;top:55%;left:16.5%;font-size:35rpx;">跳蚤市场</text>
+		<text style="position:absolute;top:55%;left:21%;font-size:35rpx;">活动</text>
 	  </view>
   <!--底部评论输入，按钮-->
   <view class="botBlock">
