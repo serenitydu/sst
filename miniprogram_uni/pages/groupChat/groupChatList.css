@@ -26,10 +26,8 @@
 .fLine{
 	height: 40%;
 	width: 100%;
-	display: flex;
 	justify-content: space-between;
-	flex-direction: row;
-	align-items: center;
+	margin-top: 15rpx;
 }
 .sLine{
 	height: 60%;
@@ -37,23 +35,25 @@
 	
 }
 .groupImg{
-	border-radius: 10rpx;
+	border-radius: 15rpx;
 	position: relative;
-	padding:30rpx;
-	height: 80rpx;
-	width: 80rpx;
+	padding:20rpx;
+	height: 120rpx;
+	width: 120rpx;
 }
 .titleText{
+	float: left;
 	letter-spacing:4rpx;
-	margin-left: 8rpx;
+	margin-left: 10rpx;
 }
 .messageText{
 	font-size: 90%;
 	color: #8a8a8a;
-	margin-left: 25rpx;
+	margin-left: 10rpx;
 }
 .timeText{
+	float: right;
 	font-size: 70%;
 	color: #B8B8B8;
-	margin-right: 15rpx;
+	margin-right: 20rpx;
 }

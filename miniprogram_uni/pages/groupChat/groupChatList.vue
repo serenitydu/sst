@@ -8,7 +8,7 @@
 				<view class = "textBlock">
 					<view class = "fLine">
 						<text class="titleText">{{message.title}}</text>
-						<text class="timeText">{{message.tsp}}</text>
+						<text class="timeText">{{message.lastTime}}</text>
 					</view>
 					<view class = "sLine">
 						<text class="messageText">{{message.lastMsg}}</text>
@@ -59,7 +59,7 @@
 								for (i=0;i<tmp.length;i++){
 									if (tmp[i].id==res.data.chatRoomId){
 										tmp[i].lastMsg=res.data.cnt;
-										tmp[i].tsp=res.data.timeStp;
+										tmp[i].lastTime=res.data.timeStp;
 										break;
 									}
 								}

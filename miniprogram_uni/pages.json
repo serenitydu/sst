@@ -180,6 +180,7 @@
 			 	"iconPath": "./static/navbar_icons/activity.png",
 			 	"selectedIconPath": "./static/navbar_icons/activity-active.png"
 			},
+			
 			{
 				"text": "聊天",
 				"pagePath": "pages/groupChat/groupChatList",
