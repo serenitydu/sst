@@ -25,7 +25,7 @@
       <view style="height:800rem; background: #ffffff;">
         <scroll-view :style="'height: ' + ratio + 'px'" scroll-y="true">
           <block v-for="(itemName, idx) in community" :key="idx"> 
-            <view class="xiaoneiBlock" :style="'height:'+ itemName.height + 'rpx;'" :data-naviParam="itemName" :data-commuId="itemName.comDir" :data-ind="idx" :data-commuListId="itemName._id" @tap="tapComu">
+            <view class="xiaoneiBlock" :style="'height:'+ itemName.height + 'rpx;'" :data-naviParam="itemName" :data-commuId="itemName.comDir" :data-ind="idx" :data-commuListId="itemName._id">
               <block>
                 <image :src="itemName.authorImg" class="authImg" mode="aspectFill"></image>
                 <view class="FLcontainer">
@@ -33,17 +33,18 @@
                   <view class="lv" :style="'color:' + itemName.color + '; '">lvl:{{itemName.lvl}}</view>
                 </view>
                 <view class="comdate">{{itemName.date}}</view>
-				<image v-if="itemName.img[0]!=null" :src="itemName.img[0]" class="xiaoneiImg" mode="aspectFill"></image>
-                <view class="xiaoneiDetail" :style="'top:'+ itemName.detail_top + 'rpx;'">{{itemName.detail}}</view>
-                <view class="xiaoneiText" :style="'top:'+ itemName.text_top + 'rpx;'"><text class="xiaoneiText_wrap_text">{{itemName.text}}</text></view>
-                
-                <view v-if="itemName.tags[0]!=null" class="tagArea1" :style="'top:'+ itemName.tags_top + 'rpx;'">
-                  <block v-for="(tag, index2) in itemName.tags" :key="index2">
-                    <view class="tagCard">
-						<text decode="true">#{{tag}}</text>
-                    </view>
-                  </block>
-                </view>
+				<view @tap="tapComu">
+					<image v-if="itemName.img[0]!=null" :src="itemName.img[0]" class="xiaoneiImg" mode="aspectFill"></image>
+					<view class="xiaoneiDetail" :style="'top:'+ itemName.detail_top + 'rpx;'">{{itemName.detail}}</view>
+					<view class="xiaoneiText" :style="'top:'+ itemName.text_top + 'rpx;'"><text class="xiaoneiText_wrap_text">{{itemName.text}}</text></view>     
+					<view v-if="itemName.tags[0]!=null" class="tagArea1" :style="'top:'+ itemName.tags_top + 'rpx;'">
+					<block v-for="(tag, index2) in itemName.tags" :key="index2">
+						<view class="tagCard">
+							<text decode="true">#{{tag}}</text>
+						</view>
+					</block>
+					</view>
+				</view>
 				<view class="cutLine"></view>
                 <view class="comment_vote">
                   <view class="views1">
@@ -51,15 +52,14 @@
                       <view class="text_skewing">{{itemName.vc}}次查看</view>
                   </view>
 
-                  <view class="views2">
-                    <block v-if="voted==false" :data-commuList="itemName" :data-ind="idx" @tap.native.stop="upVoteComment">
-                      <image src="../../static/icons/up_vote.png" mode="aspectFill" class="comment_icon"></image>
-                    </block>
+                  <view class="views2" @tap="upVoteComment">
+					<block v-if="voted==false" :data-commuList="itemName" :data-ind="idx">
+						<image src="../../static/icons/up_vote.png" mode="aspectFill" class="comment_icon"></image>
+					</block>
 
-                    <block v-else-if="voted" :data-commuList="itemName" :data-ind="idx" @tap.native.stop="upVoteComment">
-                      <image src="../../static/icons/up_voted.png" mode="aspectFill" class="comment_icon"></image>
-                    </block>
-                    
+					<block v-else-if="voted" :data-commuList="itemName" :data-ind="idx">
+						<image src="../../static/icons/up_voted.png" mode="aspectFill" class="comment_icon"></image>
+					</block>
                     <view class="text_skewing">{{itemName.upC}}个赞</view>
                   </view>
 
@@ -254,40 +254,40 @@ export default {
       });
     },
     tapComu: function (e) {
-      var that = this;
-      var inde = e.currentTarget.dataset.ind; //取得全局App({..})实例
+		var that = this;
+		var inde = e.currentTarget.dataset.ind; //取得全局App({..})实例
+		getApp().globalData.var1 = e.currentTarget.dataset.commuid; //取得全局变量需要的值
 
-      getApp().globalData.var1 = e.currentTarget.dataset.commuid; //取得全局变量需要的值
+		var cid = e.currentTarget.dataset.commulistid;
+		getApp().globalData.cmulid = e.currentTarget.dataset.commuid; //取得全局变量需要的值
 
-      var cid = e.currentTarget.dataset.commulistid;
-      getApp().globalData.cmulid = e.currentTarget.dataset.commuid; //取得全局变量需要的值
-
-      uni.request({
-      	url: 'https://lej4kht0ig.execute-api.us-east-2.amazonaws.com/CLF/updateupvoter',
-      	method: 'POST',
-        data: {
-          postId: cid,
-          mode: 2
-        },
-        success: function (res) {
-          var tmpList = that.community;
-          tmpList[inde].vc++;
-          that.setData({
-            community: tmpList
-          });
-        }
-      });
-      wx.navigateTo({
-        url: '../xiaonei/xiaonei'
-      });
-    },
+		uni.request({
+			url: 'https://lej4kht0ig.execute-api.us-east-2.amazonaws.com/CLF/updateupvoter',
+			method: 'POST',
+			data: {
+			postId: cid,
+			mode: 2
+			},
+			success: function (res) {
+				var tmpList = that.community;
+				tmpList[inde].vc++;
+				that.setData({
+					community: tmpList
+				});
+			}
+		});
+		wx.navigateTo({
+			url: '../xiaonei/xiaonei'
+		});
+	},
+	
     showMenu: function () {
       this.setData({
         comMenu: !this.comMenu
       });
     },
+	
     tapErshou: function (e) {
-      
 	  getApp().globalData.itemInfo=e.currentTarget.dataset.naviparam;
       console.log(e.currentTarget.dataset.naviparam._id);
       uni.request({
@@ -304,8 +304,10 @@ export default {
         url: '../tuan/tuan'
       });
     },
+	
     upVoteComment: function (e) {
       //TODO: update database with the up conts
+	  console.log(111);
       if (this.upAvi) {
         console.log(this.upAvi);
         this.setData({
