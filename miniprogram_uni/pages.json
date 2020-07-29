@@ -67,6 +67,10 @@
 			"style": {}
 		},
 		{
+			"path":"pages/postPage/post",
+			"style":{}
+		},
+		{
 			"path": "pages/pubReq/pubReq",
 			"style": {}
 		},
@@ -180,7 +184,21 @@
 			 	"iconPath": "./static/navbar_icons/activity.png",
 			 	"selectedIconPath": "./static/navbar_icons/activity-active.png"
 			},
-			
+			//#ifdef MP-WEIXIN
+			{
+				"text": "发布",
+				"pagePath": "pages/postPage/post",
+				"iconPath": "./static/navbar_icons/add-circle-line.png",
+				"selectedIconPath": "./static/navbar_icons/add-circle-fill.png"
+			},
+			//#endif
+			//#ifndef MP-WEIXIN
+			{
+				"pagePath": "pages/postPage/post",
+				"iconPath": "./static/navbar_icons/add-circle-line.png",
+				"selectedIconPath": "./static/navbar_icons/add-circle-fill.png"
+			},
+			//#endif
 			{
 				"text": "聊天",
 				"pagePath": "pages/groupChat/groupChatList",

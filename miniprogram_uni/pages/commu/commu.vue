@@ -79,18 +79,6 @@
       </view>
   </swiper-item>
 
-  <view v-if="comMenu" style="width:100%;height:100%;top:0; position:absolute;right:0;background:#808080; opacity:0.8;" @tap="showMenu"></view>
-  <view v-if="comMenu" style="width:100%;height:50%;top:60%; position:absolute;right:0;background:#f5f5f5; opacity:0.99;border-radius: 30rpx;">
-    <view class="comMn" style="left:17.5%; top:30%" data-postR="出二手" @tap="comMenuRedirect">
-      <image src="../../static/icons/ershou.png" style="width: 120rpx; height:120rpx; position: absolute;" mode="aspectFill"></image>
-    </view>
-    <text style="position:absolute;top:55%;left:21%;font-size:35rpx;">活动</text>
-    <view class="comMn" style="right:17.5%; top:30%" data-postR="发需求" @tap="comMenuRedirectPost">
-      <image src="../../static/icons/publish.png" style="width: 120rpx; height:120rpx;; position: absolute;" mode="aspectFill"></image>
-    </view>
-    <text style="position:absolute;top:55%;right:21%;font-size:35rpx;">社区</text>
-  </view>
-  <image src="../../static/icons/more.png" mode="aspectFill" @tap="showMenu" style="width: 100rpx; height:100rpx;position: absolute; right:30rpx; bottom:27px;z-index: 4;"></image>
 
 </view>
 </view>
@@ -280,12 +268,6 @@ export default {
 			url: '../xiaonei/xiaonei'
 		});
 	},
-	
-    showMenu: function () {
-      this.setData({
-        comMenu: !this.comMenu
-      });
-    },
 	
     tapErshou: function (e) {
 	  getApp().globalData.itemInfo=e.currentTarget.dataset.naviparam;
