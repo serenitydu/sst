@@ -37,33 +37,7 @@
 			"style":{}
 		},
 		{
-			"path": "pages/showCP/showCP",
-			"style": {}
-		},
-		{
-			"path": "pages/mercPage/mercIndex/mercIndex",
-			"style": {}
-		},
-		{
 			"path": "pages/testPage/test2",
-			"style": {}
-		},
-		{
-			"path": "pages/mercPage/manageItem/manageItem",
-			"style": {}
-		},
-		{
-			"path": "pages/mercPage/addItem/addItem",
-			"style": {}
-		},
-		{
-			"path": "pages/mercPage/manageStore/manageStore",
-			"style": {
-				"enablePullDownRefresh": true
-			}
-		},
-		{
-			"path": "pages/Pintuan/Pintuan",
 			"style": {}
 		},
 		{
@@ -95,18 +69,6 @@
 			"style": {}
 		},
 		{
-			"path": "pages/navi/navi",
-			"style": {}
-		},
-		{
-			"path": "pages/Store/Store",
-			"style": {}
-		},
-		{
-			"path": "pages/item/item",
-			"style": {}
-		},
-		{
 			"path": "component/popup/popup",
 			"style": {
 				"component": true
@@ -123,10 +85,6 @@
 			}
 		},
 		{
-			"path": "pages/tuan/tuan",
-			"style": {}
-		},
-		{
 			"path": "pages/xiaonei/xiaonei",
 			"style": {}
 		},
@@ -136,29 +94,19 @@
 				"component": true
 			}
 		},
-		{
-			"path": "pages/ershou/ershou",
-			"style": {
-				"enablePullDownRefresh": true,
-				"navigationStyle":"custom",
-				"app-plus": {  
-					"titleNView": false  
-				}
-			}
-		}
-	    ,{
+	    {
             "path" : "pages/login/login",
             "style" : {}
-        }
-        ,{
+        },
+		{
             "path" : "pages/register/register",
             "style" : {}
-        }
-        ,{
+        },
+        {
             "path" : "pages/userFile/userFile",
             "style" : {}
-        }
-        ,{
+        },
+        {
             "path" : "pages/GroupActs/GroupActPage",
             "style" : {}
         }
@@ -205,14 +153,6 @@
 				"iconPath": "./static/navbar_icons/chat.png",
 				"selectedIconPath": "./static/navbar_icons/chat-active.png"
 			},
-			/**
-			{
-				"text": "跳蚤市场",
-				"pagePath": "pages/ershou/ershou",
-				"iconPath": "./static/navbar_icons/store.png",
-				"selectedIconPath": "./static/navbar_icons/store-active.png"
-			},
-			*/
 			{
 				"text": "个人",
 				"pagePath": "pages/userInfo/userInfo",
