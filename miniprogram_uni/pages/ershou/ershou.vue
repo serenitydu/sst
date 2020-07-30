@@ -83,20 +83,7 @@
 					</scroll-view>
 				</swiper-item>
 			</swiper>
-
-			<!--底部“加号”按钮-->
-			<view v-if="comMenu" @tap="showMenu" class="comMenuAll"></view>
-			<view v-if="comMenu" class="comMenuBG">
-				<view class="comMn" style="left:17.5%; top:30%" data-postR="出二手" @tap="comMenuRedirect">
-					<image src="../../static/icons/ershou.png" style="width: 120rpx; height:120rpx; position: absolute;" mode="aspectFill"></image>
-				</view>
-				<text style="position:absolute;top:55%;left:21%;font-size:35rpx;">活动</text>
-				<view class="comMn" style="right:17.5%; top:30%" data-postR="发需求" @tap="comMenuRedirectPost">
-					<image src="../../static/icons/publish.png" style="width: 120rpx; height:120rpx;; position: absolute;" mode="aspectFill"></image>
-				</view>
-				<text style="position:absolute;top:55%;right:16.5%;font-size:35rpx;">社区</text>
-			</view>
-			<image src="../../static/icons/more.png" mode="aspectFill" @tap="showMenu" style="width: 100rpx; height:100rpx;position: absolute; right:30rpx; bottom:45px;"></image>
+			
 		</view>
 	</view>
 </template>

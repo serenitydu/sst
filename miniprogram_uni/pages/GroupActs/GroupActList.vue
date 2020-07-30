@@ -3,7 +3,7 @@
 		<view class="heading">
 			</view>
 		<view class="container">
-			<view class="adBc">afsafs</view>
+			<view class="adBc">广告位（也可以放点别的）</view>
 			<block v-for="(message, index) in gList" :key="index">
 				<view  v-if="index%2!=0" class="gcBlock2" :data-naviParam="message.groupChatId" :data-naviParam2="message.groupChatTitle" :data-naviParam3="index" @tap="tapGC1">
 					<view class="nameBlock">

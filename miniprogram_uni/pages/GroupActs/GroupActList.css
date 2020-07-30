@@ -67,8 +67,8 @@
 	font-size:70%;
 }
 .contentBlock{
-	height: 600rpx;
-	width: 100vw;
+	height: 460rpx;
+	width: 47vw;
 }
 .contentImg{
 	position: relative;
@@ -78,7 +78,7 @@
 	top: 10rpx;
 }
 .descBlock{
-	height:190rpx;
+	height:160rpx;
 	width: 45vw;
 	margin-left: 1vw;
 	word-wrap: break-word;
