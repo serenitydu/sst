@@ -1,24 +1,70 @@
 .container{
 	width: 100vw;
 	height: 100vh;
-	background: rgb(228, 228, 228);
+	background: #ececec80;
 }
 .gcBlock{
 	width:100vw;
-	height: 200rpx;
+	height: 160rpx;
 	background: #ffffff;
 	border-top: 2rpx solid rgb(228, 228, 228);
 }
+.imageBlock{
+	width: 20%;
+	float: left;
+	height: 160rpx;
+}
+.textBlock{
+	width: 80%;
+	float: left;
+	height: 160rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+.fLine{
+	height: 40%;
+	width: 100%;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	margin-top: 15rpx;
+}
+.sLine{
+	height: 60%;
+	width: 100%;
+}
 .groupImg{
-  border-radius: 10rpx;
-  position: relative;
-  top:30rpx;
-  height: 80rpx;
-  width: 80rpx;
+	border-radius: 15rpx;
+	position: relative;
+	padding:20rpx;
+	height: 120rpx;
+	width: 120rpx;
 }
 .titleText{
-	font-family: PingFangTC-Semibold;
-	padding: 20rpx 50rpx;
-	font-weight: bold;
+	float: left;
+	letter-spacing:4rpx;
+	margin-left: 10rpx;
+}
+.messageText{
+	font-size: 90%;
+	color: #8a8a8a;
+	margin-left: 10rpx;
+}
+.timeText{
+	float: right;
+	font-size: 70%;
+	color: #B8B8B8;
+	margin-right: 20rpx;
 }
 

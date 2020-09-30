@@ -12,11 +12,13 @@ Page{
   height: 110rpx;
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   /*row 横向  column 列表  */
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
+      -ms-flex-direction: row;
           flex-direction: row;
 }
 .AVcontainer1{
@@ -26,11 +28,13 @@ Page{
   height: 110rpx;
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   /*row 横向  column 列表  */
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
+      -ms-flex-direction: column;
           flex-direction: column;
 }
 .authorimg{
@@ -50,25 +54,30 @@ Page{
 .titleAndPrice{
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   /*row 横向  column 列表  */
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
+      -ms-flex-direction: row;
           flex-direction: row;
 }
 .title{
   position: flex;
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width:100%;
   font-size: 120%;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+      -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
+      -ms-flex-align: center;
           align-items: center;
   word-break: break-all;
   font-weight: bold;
@@ -79,12 +88,15 @@ Page{
   background-color:#edcd4e;
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
+      -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+      -ms-flex-pack: center;
           justify-content: center;
   position: flex;
   margin-right: 0%; /*这里需要右对齐，能改吗？？？如果价格超过5位数可能出错，先留着*/
@@ -101,11 +113,13 @@ Page{
   font-size: 120%;
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   /*row 横向  column 列表  */
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
+      -ms-flex-direction: row;
           flex-direction: row;
 }
 .tag_icon{
@@ -137,12 +151,15 @@ Page{
   bottom: 0%;
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
+      -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+      -ms-flex-pack: center;
           justify-content: center;
 }
 .adtocart {
@@ -164,12 +181,15 @@ Page{
   left: 20rpx;
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
+      -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+      -ms-flex-pack: center;
           justify-content: center;
 }
 

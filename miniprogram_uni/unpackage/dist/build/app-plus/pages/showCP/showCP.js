@@ -1,2 +1,0 @@
-setCssToHead([".",[1],"bkg{ width: 100%; height: 100%; display: -webkit-box; display: -webkit-flex; display: flex; background: rgb(255, 234, 118); -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; flex-direction: row; -webkit-box-pack: center; -webkit-justify-content: center; justify-content: center; }\n",],undefined,{path:"./pages/showCP/showCP.wxss"})();
-document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/showCP/showCP.wxml') } }));

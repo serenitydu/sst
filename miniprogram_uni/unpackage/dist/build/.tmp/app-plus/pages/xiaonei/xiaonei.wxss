@@ -2,6 +2,137 @@
   width: 100%;
   height: 100%;
 }
+.reportPanel{
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top:0px;
+	left: 0px;
+}
+.reportBut{
+	background: green;
+	height: 10%;
+	margin-top: 10%;
+	margin-left: 25%;
+	width: 50%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	border-radius: 22rpx;
+	font-size: 150%;
+}
+.menuImgs{
+	
+		width: 20vw;
+		height: 20vw;
+}
+.menuButs{
+}
+.menuTxts{
+	
+	display: -webkit-box;
+	
+	display: -webkit-flex;
+	
+	display: -ms-flexbox;
+	
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.menuCnt{
+	position: absolute;
+	height:35vh;
+	width:100vw;
+	left:0px;
+	bottom: 0px;
+	background: whitesmoke;
+	border-top-left-radius: 35px;
+	border-top-right-radius:35px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.reportTop{
+	width:100%;height:10%;background: #ffbf00;border-top-left-radius: 20rpx;border-top-right-radius: 20rpx;text-align: center;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	font-size: 135%;
+}
+.reportReason{
+	height: 60%;
+	margin-top: 5%;
+	margin-left: 5%;
+	width: 90%;
+	overflow-wrap: break-word;
+	background: #ededed;
+}
+.reportCnt{
+	position: absolute;
+	top:10vh;
+	left:10vw;
+	width: 80vw;
+	height: 80vh;
+	background: whitesmoke;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+.reportBack{
+	
+		width: 100vw;
+		height: 100vh;
+		background: gray;
+		opacity: 0.5;
+}
 .page_intend{
   position: relative;
   left: 3%;
@@ -11,23 +142,29 @@
 .username_lvl{
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
           justify-content: flex-start;
   -webkit-box-align: center;
   -webkit-align-items: center;
+      -ms-flex-align: center;
           align-items: center;
 }
 .ertai{
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
           justify-content: flex-start;
   -webkit-box-align: center;
   -webkit-align-items: center;
+      -ms-flex-align: center;
           align-items: center;
 }
 /*这里往上是用户名+等级*/
@@ -44,6 +181,14 @@
   color: goldenrod;
   font-weight: bold;
 }
+.moreFunction{
+	position: absolute;
+	right:30rpx;
+	top:30rpx;
+	height: 40rpx;
+	width: 40rpx;
+    margin-right: 0px;
+}
 /*评论，点赞图标*/
 .vote_comment_icon{
   position: relative;
@@ -51,11 +196,13 @@
   height:100rpx;
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   /*row 横向  column 列表  */
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
+      -ms-flex-direction: row;
           flex-direction: row;
 }
 /*隐藏滚动条*/
@@ -69,11 +216,13 @@
   height: 110rpx;
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   /*row 横向  column 列表  */
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
+      -ms-flex-direction: row;
           flex-direction: row;
 }
 .user_info_bar{
@@ -83,11 +232,13 @@
   height: 110rpx;
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   /*row 横向  column 列表  */
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
+      -ms-flex-direction: column;
           flex-direction: column;
 }
 .date{
@@ -133,11 +284,13 @@
   height: 130rpx;
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   /*row 横向  column 列表  */
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
+      -ms-flex-direction: row;
           flex-direction: row;
 }
 /*底部评论，按钮*/
@@ -162,13 +315,16 @@
   position: absolute;
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
+      -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+      -ms-flex-pack: center;
           justify-content: center;
   right: 10rpx;
   bottom: 10px;
@@ -176,6 +332,7 @@
   width: 150rpx;
   -webkit-box-align: center;
   -webkit-align-items: center;
+      -ms-flex-align: center;
           align-items: center;
 }
 .cover0{
@@ -186,12 +343,15 @@
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+      -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
+      -ms-flex-align: center;
           align-items: center;
 }
 .cover{
@@ -211,16 +371,20 @@
   opacity: 1;
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
    -webkit-box-orient: vertical;
    -webkit-box-direction: normal;
    -webkit-flex-direction: column;
+       -ms-flex-direction: column;
            flex-direction: column;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+      -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
+      -ms-flex-align: center;
           align-items: center;
   z-index: 15;
   border-radius: 25rpx;

@@ -4,6 +4,7 @@
     "pages/groupChat/groupChat",
     "pages/groupChat/groupChatList",
     "pages/userInfo/userInfo",
+    "pages/GroupActs/GroupActList",
     "pages/showCP/showCP",
     "pages/mercPage/mercIndex/mercIndex",
     "pages/testPage/test2",
@@ -11,6 +12,7 @@
     "pages/mercPage/addItem/addItem",
     "pages/mercPage/manageStore/manageStore",
     "pages/Pintuan/Pintuan",
+    "pages/postPage/post",
     "pages/pubReq/pubReq",
     "pages/newAt/newAt",
     "pages/pays/htvarify",
@@ -29,7 +31,8 @@
     "pages/ershou/ershou",
     "pages/login/login",
     "pages/register/register",
-    "pages/userFile/userFile"
+    "pages/userFile/userFile",
+    "pages/GroupActs/GroupActPage"
   ],
   "window": {
     "backgroundColor": "#FFD557",
@@ -45,32 +48,31 @@
       {
         "text": "社区",
         "pagePath": "pages/commu/commu",
-        "iconPath": "./static/icons/community.png",
-        "selectedIconPath": "./static/icons/community-active.png"
+        "iconPath": "./static/navbar_icons/community.png",
+        "selectedIconPath": "./static/navbar_icons/community-active.png"
       },
       {
         "text": "活动",
-        "pagePath": "pages/commu/commu",
-        "iconPath": "./static/icons/home-white.png",
-        "selectedIconPath": "./static/icons/home-white-active.png"
+        "pagePath": "pages/GroupActs/GroupActList",
+        "iconPath": "./static/navbar_icons/activity.png",
+        "selectedIconPath": "./static/navbar_icons/activity-active.png"
+      },
+      {
+        "pagePath": "pages/postPage/post",
+        "iconPath": "./static/navbar_icons/add-circle-line.png",
+        "selectedIconPath": "./static/navbar_icons/add-circle-fill.png"
       },
       {
         "text": "聊天",
         "pagePath": "pages/groupChat/groupChatList",
-        "iconPath": "./static/icons/community.png",
-        "selectedIconPath": "./static/icons/community-active.png"
-      },
-      {
-        "text": "交易",
-        "pagePath": "pages/ershou/ershou",
-        "iconPath": "./static/icons/web.png",
-        "selectedIconPath": "./static/icons/web-active.png"
+        "iconPath": "./static/navbar_icons/chat.png",
+        "selectedIconPath": "./static/navbar_icons/chat-active.png"
       },
       {
         "text": "个人",
         "pagePath": "pages/userInfo/userInfo",
-        "iconPath": "./static/icons/user.png",
-        "selectedIconPath": "./static/icons/user-active.png"
+        "iconPath": "./static/navbar_icons/user.png",
+        "selectedIconPath": "./static/navbar_icons/user-active.png"
       }
     ]
   },
@@ -81,6 +83,6 @@
     "autoclose": false
   },
   "appname": "miniprogram-1",
-  "compilerVersion": "2.5.1",
+  "compilerVersion": "2.4.2",
   "usingComponents": {}
 }

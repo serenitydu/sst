@@ -43,7 +43,9 @@
                 ]
             },
             "ios" : {},
-            "sdkConfigs" : {}
+            "sdkConfigs" : {
+                "ad" : {}
+            }
         }
     },
     "quickapp" : {},

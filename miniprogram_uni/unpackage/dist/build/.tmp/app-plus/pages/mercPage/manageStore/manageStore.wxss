@@ -60,13 +60,16 @@
     line-height: 88rpx;
     display: -webkit-box;
     display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-flow: row;
+        -ms-flex-flow: row;
             flex-flow: row;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
             justify-content: space-between;
 }
 .itemsDis{
@@ -151,12 +154,15 @@
   background: rgb(143, 248, 143);
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
+      -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+      -ms-flex-pack: center;
           justify-content: center;
 }
 .rightBut{
@@ -168,12 +174,15 @@
   background: rgb(143, 248, 143);
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
+      -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+      -ms-flex-pack: center;
           justify-content: center;
 }
 

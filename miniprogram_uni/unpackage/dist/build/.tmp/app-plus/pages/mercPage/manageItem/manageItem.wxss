@@ -38,12 +38,15 @@
   left:2%;
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
+      -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: left;
   -webkit-justify-content: left;
+      -ms-flex-pack: left;
           justify-content: left;
 }
 .flavCardR{
@@ -54,12 +57,15 @@
   right:-20%;
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
+      -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+      -ms-flex-pack: center;
           justify-content: center;
 }
 .section1{
@@ -83,13 +89,16 @@
   border-bottom:  3rpx dashed rgb(211, 211, 211);
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
+      -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-pack: space-evenly;
   -webkit-justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
 .atc{
@@ -99,12 +108,15 @@
   bottom: 0%;
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
+      -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+      -ms-flex-pack: center;
           justify-content: center;
 }
 .adtocart {
@@ -126,12 +138,15 @@
   left: 20rpx;
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
+      -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+      -ms-flex-pack: center;
           justify-content: center;
 }
 .imageWindow{
@@ -152,12 +167,15 @@
   background: rgb(143, 248, 143);
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
+      -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+      -ms-flex-pack: center;
           justify-content: center;
 }
 .rightBut{
@@ -169,12 +187,15 @@
   background: rgb(143, 248, 143);
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
+      -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+      -ms-flex-pack: center;
           justify-content: center;
 }
 

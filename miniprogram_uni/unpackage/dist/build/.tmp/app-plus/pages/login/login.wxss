@@ -50,6 +50,7 @@
 /*按钮点击效果*/
 .zai-btn.button-hover{
 	-webkit-transform: translate(1rpx, 1rpx);
+	    -ms-transform: translate(1rpx, 1rpx);
 	        transform: translate(1rpx, 1rpx);
 }
 

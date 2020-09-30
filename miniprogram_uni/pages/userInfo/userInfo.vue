@@ -499,13 +499,16 @@
 								}
 							});
 						} else {
-							wx.cloud.callFunction({
-								// 云函数名称
-								name: 'updateUserInfo',
+							console.log(phnum);
+							uni.request(
+							{
+								url: 'https://lej4kht0ig.execute-api.us-east-2.amazonaws.com/CLF/updateuserinfo',
+								method: 'POST',
 								// 传给云函数的参数
 								data: {
 									mode: 1,
-									phone: phnum
+									phone: phnum,
+									openId: getApp().globalData.openId
 								},
 								success: function(res) {
 									that.updatePhone();
@@ -516,7 +519,7 @@
 									});
 								},
 								fail: function(res) {
-									console.log("suck");
+									console.log(res);
 								}
 							});
 						}

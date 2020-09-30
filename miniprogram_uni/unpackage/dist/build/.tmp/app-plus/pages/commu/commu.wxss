@@ -13,12 +13,15 @@ Page{
   border-color: #e1dede;
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+      -ms-flex-pack: center;
           justify-content: center; 
   -webkit-box-align: center; 
   -webkit-align-items: center; 
+      -ms-flex-align: center; 
           align-items: center;
   margin-right: 10rpx;
   margin-bottom: 10rpx;
@@ -33,14 +36,18 @@ Page{
   left: 20rpx;
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
           justify-content: flex-start; 
   -webkit-box-align: center; 
   -webkit-align-items: center; 
+      -ms-flex-align: center; 
           align-items: center;
   -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
           flex-wrap: wrap;
 }
 .locationCon{
@@ -50,13 +57,16 @@ Page{
 	width: 20%;
 	display: -webkit-box;
 	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-flow: column;
+	    -ms-flex-flow: column;
 	        flex-flow: column;
 	-webkit-box-pack: center;
 	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
 	        justify-content: center;
 	font-size: 80%;
 }
@@ -82,6 +92,7 @@ Page{
   z-index: 5;
   border-radius: 10%;
 }
+
 /*图片不显示for some reason*/
 .locationIcon{
   position: absolute;
@@ -90,6 +101,7 @@ Page{
   z-index: 5;
   border-radius: 10%;
 }
+
 /*社区用户头像*/
 .authImg{
   position: absolute;
@@ -99,6 +111,7 @@ Page{
   height: 90rpx;
   border-radius: 100%;
 }
+
 /*用户姓名*/
 .userNm{
   font-family: PingFangTC-Semibold;
@@ -111,10 +124,12 @@ Page{
   left: 140rpx;
   display:-webkit-box;
   display:-webkit-flex;
+  display:-ms-flexbox;
   display:flex;
   justify-conent: flex-start;
   -webkit-box-align:center;
   -webkit-align-items:center;
+      -ms-flex-align:center;
           align-items:center;
 }
 .lv{
@@ -126,6 +141,7 @@ Page{
   font-weight: bold;
   /*text-shadow:1rpx 1rpx 1rpx;*/
 }
+
 /*社区图片*/
 .xiaoneiImg{
   width: 100%;
@@ -134,6 +150,7 @@ Page{
   top: 150rpx;
   z-index: 2;
 }
+
 /*社区标题*/
 .xiaoneiDetail{
 	position: absolute; 
@@ -143,6 +160,7 @@ Page{
 	text-align: left; 
 	width: 94%;
 }
+
 /*社区正文*/
 .xiaoneiText{
 	position: absolute; 
@@ -152,40 +170,94 @@ Page{
 	text-align: left; 
 	width: 94%;
 }
+
 /*社区Block*/
 .xiaoneiBlock{
 	background-size:contain;
 	position: relative;
 	z-index: 2;
 	width: 100%;
-	height: 1090rpx;
 }
 .xiaoneiText_wrap_text{
 	display: -webkit-box;
 	overflow: hidden; 
-	text-overflow: ellipsis; 
+	-o-text-overflow: ellipsis; 
+	   text-overflow: ellipsis; 
 	word-wrap: break-word; 
 	white-space: normal !important;
-	-webkit-line-clamp: 2; 
+	-webkit-line-clamp: 5; 
 	-webkit-box-orient: vertical;
 }
-.views{
-	width:12%;
+.views1{
+	position: absolute;
+	left: 2vw;
+	width:20vw;
 	height: 100%; 
 	display:-webkit-box; 
 	display:-webkit-flex; 
+	display:-ms-flexbox; 
 	display:flex;
-	-webkit-box-pack:center;
-	-webkit-justify-content:center;
-	        justify-content:center;
-	-webkit-box-align:center;
-	-webkit-align-items:center;
-	        align-items:center; 
-	-webkit-box-orient:horizontal; 
+	-webkit-box-pack:start;
+	-webkit-justify-content:flex-start;
+	    -ms-flex-pack:start;
+	        justify-content:flex-start;
+	-webkit-box-align:start;
+	-webkit-align-items:flex-start;
+	    -ms-flex-align:start;
+	        align-items:flex-start; 
+	-webkit-box-orient:vertical; 
 	-webkit-box-direction:normal; 
-	-webkit-flex-direction:row; 
-	        flex-direction:row;
+	-webkit-flex-direction:column; 
+	    -ms-flex-direction:column; 
+	        flex-direction:column;
 }
+.views2{
+	position: absolute;
+	left: 22vw;
+	width:20vw;
+	height: 100%; 
+	display:-webkit-box; 
+	display:-webkit-flex; 
+	display:-ms-flexbox; 
+	display:flex;
+	-webkit-box-pack:start;
+	-webkit-justify-content:flex-start;
+	    -ms-flex-pack:start;
+	        justify-content:flex-start;
+	-webkit-box-align:start;
+	-webkit-align-items:flex-start;
+	    -ms-flex-align:start;
+	        align-items:flex-start; 
+	-webkit-box-orient:vertical; 
+	-webkit-box-direction:normal; 
+	-webkit-flex-direction:column; 
+	    -ms-flex-direction:column; 
+	        flex-direction:column;
+}
+.views3{
+	position: absolute;
+	right: 2vw;
+	width:20vw;
+	height: 100%; 
+	display:-webkit-box; 
+	display:-webkit-flex; 
+	display:-ms-flexbox; 
+	display:flex;
+	-webkit-box-pack:start;
+	-webkit-justify-content:flex-start;
+	    -ms-flex-pack:start;
+	        justify-content:flex-start;
+	-webkit-box-align:start;
+	-webkit-align-items:flex-start;
+	    -ms-flex-align:start;
+	        align-items:flex-start; 
+	-webkit-box-orient:vertical; 
+	-webkit-box-direction:normal; 
+	-webkit-flex-direction:column; 
+	    -ms-flex-direction:column; 
+	        flex-direction:column;
+}
+
 /*社区日期*/
 .comdate{
   position: absolute;
@@ -204,16 +276,19 @@ Page{
 .we-slide {
     -webkit-flex-shrink: 0;
     -ms-flex: 0 0 auto;
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     width: 100%;
 	height: 94%;
     position: absolute;
     padding-top: 0rpx;
 }
+
 /*主界面背景色*/
 .we-slide:nth-child(1){
   background-color: whitesmoke
 }
+
 /*第二个界面背景色*/
 .we-slide:nth-child(2){
   background-color: whitesmoke
@@ -223,6 +298,7 @@ Page{
   height: 0;
   opacity: 0
 }
+
 /*这两个先不要动，是控制最上面两行总体排版的*/
 .rowSelector{
     width: 100%;
@@ -232,15 +308,19 @@ Page{
     line-height: 88rpx;
     display: -webkit-box;
     display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-flow: row;
+        -ms-flex-flow: row;
             flex-flow: row;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
             justify-content: space-between;
 }
+
 /*这两个先不要动，是控制最上面两行总体排版的*/
 .colSelector{
     width: 100%;
@@ -250,13 +330,16 @@ Page{
     line-height: 50rpx;
     display: -webkit-box;
     display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-flow: row;
+        -ms-flex-flow: row;
             flex-flow: row;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
             justify-content: space-between;
     font-size: 30rpx;
 }
@@ -275,6 +358,7 @@ swiper{
 .containerershou{
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 .AVcontainer1{
@@ -285,7 +369,17 @@ swiper{
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
+      -ms-flex-direction: column;
           flex-direction: column;
+}
+.cutLine{
+	height: 5rpx;
+	width: 95vw;
+	background: #000000;
+	opacity: 0.2;
+	position: absolute;
+	bottom:160rpx;
+	left: 2.5vw;
 }
 .authorimg{
   border-radius: 10rpx;
@@ -298,32 +392,33 @@ swiper{
 .comment_vote{
   position: absolute;
   width: 100%;
-  height: 70rpx;
-  bottom:35rpx;
+  height: 130rpx;
+  bottom:20rpx;
   left: 0%;
   display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-          justify-content: flex-end;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
+      -ms-flex-direction: row;
           flex-direction: row;
 }
 .comment_icon{
-  left:40rpx;
-  width:40rpx;
-  height:40rpx;
+	left:0rpx;
+	width:50rpx;
+	height:50rpx;
 }
 .text_skewing{
   left:40rpx;
   top:5rpx;
-  color: #8a8a8a;
+  color: #b8b8b8;
   font-size: 75%;
 }
+
 /*“出二手，技能提供”这几个按钮的格式*/
+
 /*前端实现方式以后可能会优化*/
 .comMn{
   width:120rpx;
@@ -331,42 +426,51 @@ swiper{
   position:absolute; 
   -webkit-box-align: center; 
   -webkit-align-items: center; 
+      -ms-flex-align: center; 
           align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+      -ms-flex-pack: center;
           justify-content: center;
 }
 .tab{
 	display: -webkit-box;
 	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
 	        flex-direction: column;
+	border:none;
 }
 .tab-nav{
   position:relative;
-	height: 80rpx;
+	height: 96rpx;
 	background: #fff;
-	border-bottom: 0.5rpx dotted #ddd;
 	display: -webkit-box;
 	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	line-height: 79rpx;
 }
 .tab-line{
 	position: absolute;
 	left: 0;
-	bottom: -1rpx;
-	height: 4rpx;
+	bottom: 5rpx;
+	left: 2%;
+	height: 16rpx;
 	background: #f7982a;
 	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
 	transition: all 0.3s;
+	border-radius: 100rpx;
 }
 .tab-content{
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
+	    -ms-flex: 1;
 	        flex: 1;
 	overflow-y: auto;
 	overflow-x: hidden;
