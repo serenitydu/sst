@@ -66,16 +66,17 @@
 </template>
 
 <script>
-	import awssdk from "aws-sdk";
-	import xml2js from "xml2js";
-	import xmlhttprequest from "xmlhttprequest";
+	import { S3Client } from "@aws-sdk/client-s3";
+	import { Upload } from "@aws-sdk/lib-storage";
+	var awsConfig = require("../../utils/awsConfig.js");
 	//test s3
 	var uploadingCount=0;
-	var AWS = require('aws-sdk');
-	var xmlhr = require('xmlhttprequest');
-	var s3=new AWS.S3({
-		accessKeyId: "AKIAYRSMNDSISF7IPPPN",
-		secretAccessKey: "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"
+	var s3=new S3Client({
+		region: awsConfig.region,
+		credentials: {
+			accessKeyId: awsConfig.accessKeyId,
+			secretAccessKey: awsConfig.secretAccessKey
+		}
 	});
 	var tempFilePaths;
 	var clickable = true;
@@ -197,9 +198,9 @@
 											console.log(tmparr2);
 											var params = {Bucket: 'nagi2', Key: nnm, Body: aaa};
 											//var params = {Bucket: 'nagi2', Key: 'public/gggg.png', Body: "https://article.images.consumerreports.org/f_auto/prod/content/dam/CRO%20Images%202019/Cars/March/CR-Cars-InlineHero-Mazda-CX-30-f-3-19"};
-											s3.upload(params, function(err, data) {
+											new Upload({ client: s3, params: params }).done().then(function(data) {
 											  console.log("uploading...");
-											  console.log(err, data);
+											  console.log(data);
 											  finished++;
 											  			console.log("tmparr2 out");
 											  			console.log(tmparr2);
@@ -238,6 +239,9 @@
 											  		}
 											  	});
 											  }
+											}).catch(function(err) {
+											  console.log("uploading...");
+											  console.log(err);
 											});
 										    // myBlob is now the blob that the object URL pointed to.
 										}

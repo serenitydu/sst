@@ -9,7 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.814.0",
+    "@aws-sdk/client-s3": "^3.1018.0",
+    "@aws-sdk/lib-storage": "^3.1018.0",
     "xmlhttprequest": "^1.8.0"
   }
 }

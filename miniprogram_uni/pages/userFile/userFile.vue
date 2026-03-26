@@ -16,16 +16,17 @@
 </template>
 
 <script>
-	import awssdk from "aws-sdk";
-	import xml2js from "xml2js";
-	import xmlhttprequest from "xmlhttprequest";
+	import { S3Client, DeleteObjectCommand } from "@aws-sdk/client-s3";
+	import { Upload } from "@aws-sdk/lib-storage";
+	var awsConfig = require("../../utils/awsConfig.js");
 	//test s3
 	var uploadingCount=0;
-	var AWS = require('aws-sdk');
-	var xmlhr = require('xmlhttprequest');
-	var s3=new AWS.S3({
-		accessKeyId: "AKIAYRSMNDSISF7IPPPN",
-		secretAccessKey: "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"
+	var s3=new S3Client({
+		region: awsConfig.region,
+		credentials: {
+			accessKeyId: awsConfig.accessKeyId,
+			secretAccessKey: awsConfig.secretAccessKey
+		}
 	});
 	export default {
 		data() {
@@ -104,10 +105,10 @@
 								aaa = this.response;
 								var nnm='public/avatar/avat'+getApp().globalData.openId+d.getTime().toString()+".png";
 								var params = {Bucket: 'nagi2', Key: nnm, Body: aaa};
-								s3.upload(params, function(err, data) {
+								new Upload({ client: s3, params: params }).done().then(function(data) {
 								  console.log("uploading...");
 								  console.log("openId:"+getApp().globalData.openId);
-								  console.log(err, data);
+								  console.log(data);
 								  var ef="https://nagi2.s3.amazonaws.com/"+nnm;
 								  uni.request({
 								  	url: 'https://lej4kht0ig.execute-api.us-east-2.amazonaws.com/CLF/updateuserinfo',
@@ -129,16 +130,20 @@
 											Key:newStr
 											//Key:"public/avatar/avatuow02122019170522oiw1578885912285.png"
 										}
-										s3.deleteObject(params2,function(err,data){
-											console.log(err);
+										s3.send(new DeleteObjectCommand(params2)).then(function(data){
 											console.log(data);
+										}).catch(function(err){
+											console.log(err);
 										})
 								  	},
 									fail:function(res){
 										console.log(res);
 									}
 								  });
-							    })
+								}).catch(function(err) {
+								  console.log("uploading...");
+								  console.log(err);
+								})
 							}
 						}
 						xhr.send();
