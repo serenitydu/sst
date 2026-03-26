@@ -54,13 +54,14 @@
 <script>
 	import { S3Client } from "@aws-sdk/client-s3";
 	import { Upload } from "@aws-sdk/lib-storage";
+	var awsConfig = require("../../utils/awsConfig.js");
 	//test s3
 	var uploadingCount=0;
 	var s3=new S3Client({
-		region: "us-east-2",
+		region: awsConfig.region,
 		credentials: {
-			accessKeyId: "AKIAYRSMNDSISF7IPPPN",
-			secretAccessKey: "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"
+			accessKeyId: awsConfig.accessKeyId,
+			secretAccessKey: awsConfig.secretAccessKey
 		}
 	});
 var tempFilePaths;
